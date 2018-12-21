@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        #box{
+            width: 40%;
+            height: 200px;
+            background-color: red;
+        }
+        .test1{
+            background-color: blue;
+            /*浮动:设置浮动后，会转化为行内块级标签*/
+            float: left;
+        }
+        .test2{
+            background-color: green;
+            float: right;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="test1">第一个</div>
+        <div class="test2">第二个</div>
+    </div>
+</body>
+</html>

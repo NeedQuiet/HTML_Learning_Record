@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器-常用3</title>
+    <style>
+        /*属性选择器*/
+        div[name]{
+            color: red;
+        }
+
+        div[name="div2"]{
+            color: blue;
+        }
+
+        div[name][age]{
+            background-color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <div name="div1">div11111</div>
+    <div name="div2">div22222</div>
+    <div name="div3" age="20">div33333</div>
+    <div name="div4" sex="man">div44444</div>
+    <div>div55555</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签元素划分</title>
+    <!--
+        1.块元素（块标签）
+        2.内联（行内标签）元素：特点-宽高、内外边距不可修改
+        3.内联（行内快标签）
+    -->
+    <style>
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+
+            /*隐藏标签*/
+            /*display: none;*/
+
+            /*块级标签 --> 行内标签*/
+            /*display: inline;*/
+        }
+
+        a{
+            background-color: skyblue;
+
+            /*行内标签 --> 块级标签*/
+            /*display: block;*/
+        }
+
+        button{
+            background-color: green;
+
+            /*行内标签 --> 块级标签*/
+            /*display: block;*/
+        }
+
+    </style>
+</head>
+<body>
+    <!--块元素-->
+    <div>块元素</div>
+
+    <!--行内标签-->
+    <a href="">百度一下</a>
+    <a href="">百度二下</a>
+    <a href="">百度三下</a>
+
+    <!--行内块级标签-->
+    <button>点我一下</button>
+
+</body>
+</html>

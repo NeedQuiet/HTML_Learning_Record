@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器-常用2</title>
+    <style>
+        /*后代选择器*/
+        #main p{
+            color:red;
+        }
+
+        /*直接后代选择器*/
+        #main > p{
+            color: green;
+        }
+
+        /*兄弟选择器*/
+        /*查找后边一个兄弟元素*/
+        div + p {
+            color: yellow;
+        }
+
+        /*查找后边所有的兄弟元素*/
+        div ~ p{
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p>div中的p标签</p>
+        <spa>
+            <p>span中的p标签</p>
+        </spa>
+    </div>
+    <p>与div相邻的p标签</p>
+    <p>与p相邻的p标签</p>
+    <p>与p相邻的p标签</p>
+    <p>与p相邻的p标签</p>
+    <p>与p相邻的p标签</p>
+</body>
+</html>

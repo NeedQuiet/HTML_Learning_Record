@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS选择器的优先级别</title>
+    <style>
+        /*
+            1.选择器的针对性越强，它的优先级别就越高
+            2.选择器的权值
+                *：0
+                标签： 1
+                类： 10
+                属性： 10
+                伪类/伪元素：10
+                id：100
+                !important: 1000
+            3.原则：选择器的权值加到一起，大的优先；如果权值相同，后定义的优先
+            4.优先级排序：
+                ！important > 内联（标签内style） > 类/伪类/伪元素/属性 > * > 继承
+        */
+
+        p#box{}/*权值：1 + 100 = 101 */
+        p.test{}/*权值： 1 + 10 = 11 */
+        #box{}/*权值： 100 */
+        .test{}/*权值: 10 */
+        p{}/*权值：1 */
+        p{/*权值：1 +1000 */
+            color: red !important;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="box" class="test">CSS选择器的优先级别</p>
+</body>
+</html>

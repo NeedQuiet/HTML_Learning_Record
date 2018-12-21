@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类和伪元素/否定伪类</title>
+    <style>
+        p{
+            background-color: red;
+            width: 300px;
+        }
+        /*伪元素*/
+        p::first-letter{
+            font-size: 20px;
+            color: black;
+        }
+
+        p::first-line{
+            color: yellow;
+        }
+
+        p.test1:hover{
+            width: 600px;
+            background-color: deepskyblue;
+        }
+
+        input:focus{
+            width: 500px;
+            height: 50px;
+        }
+
+        /*否定伪类（not选择器）*/
+        div:not(.box){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="test1">我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落</p>
+    <p>我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落</p>
+    <p>我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落</p>
+    <input type="text">
+
+    <br><br><br><br><br>
+
+    <div>testtesttest</div>
+    <div>testtesttest</div>
+    <div class="box">testtesttest</div>
+    <div>testtesttest</div>
+    <div>testtesttest</div>
+
+</body>
+</html>

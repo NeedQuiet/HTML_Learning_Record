@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签居中</title>
+    <style>
+        /*水平居中*/
+        #box{
+            width: 400px;
+            height: 100px;
+            background-color: red;
+            margin: 50px;
+            /*非块级水平居中*/
+            text-align: center;
+        }
+        .test1{
+            background-color: green;
+            width: 200px;
+            height: 49px;
+
+            /*只针对块级*/
+            margin: 0 auto;
+        }
+
+        /*垂直居中*/
+        #box1{
+             width: 400px;
+             height: 100px;
+             background-color: red;
+             margin: 50px;
+             text-align: center;
+
+             /*垂直居中(行内/行内块级标签)*/
+             line-height: 100px;
+         }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="test1">
+            我是块级元素
+        </div>
+        <span style="display: block;">我是span</span>
+        <button>我是button</button>
+    </div>
+    <div id="box1">
+        <span style="display: block;">我是span</span>
+        <!--<button>我是button</button>-->
+    </div>
+</body>
+</html>
