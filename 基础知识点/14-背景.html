@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景</title>
+    <style>
+        #box{
+            width: 600px;
+            height: 400px;
+
+            margin: 0 auto;
+            /*background-color: red;*/
+            /*background-color: #e00b00;*/
+            /*background-color: rgb(255,0,0);*/
+            background-color: rgba(255,0,0,.5);
+            /*background-color: rgba(255,0,0,0.5);*/
+
+            /*透明度*/
+            /*opacity: 0.7;*/
+
+            /*border: 1px solid red;*/
+            background-image: url(Image/Test.jpeg);
+
+            /*
+                no-repeat 不平铺（重复）
+                repeat -x 横向平铺（重复）
+                repeat -y 纵向平铺（重复）
+            */
+            background-repeat: no-repeat;
+            /*background-repeat: repeat-x;*/
+
+            /*设置图片的位置*/
+            /*background-position: 200px 100px;*/
+            /*background-position: center;*/
+            /*background-position: right top;*/
+
+            /*设置背景图片的尺寸*/
+            /*background-size: 100% 100%;*/
+            /*background-size: 300px 200px;*/
+            /*background-size: cover;!*等比放大至宽高最小值满足填充*!*/
+            
+            /*background-size: contain;!*等比放大至宽高之一满足填充*!*/
+            background-position: center center;
+
+        }
+
+        body{
+            /*background-image: url(Image/logo.png);*/
+            /*background-position: center center;*/
+            /*background-repeat: no-repeat;*/
+
+            /*不滚动*/
+            /*background-attachment: scroll;*/
+            background-attachment: fixed;
+
+            /*可以直接这样写*/
+            background: url(Image/logo.png) center center fixed no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test</h1>
+    <h1>Test</h1>
+    <h1>Test</h1>
+    <h1>Test</h1>
+    <h1>Test</h1>
+    <h1>Test</h1>
+    <h1>Test</h1>
+    <h1>Test</h1>
+    <h1>Test</h1>
+    <h1>Test</h1>
+    <h1>Test</h1>
+    <h1>Test</h1>
+    <div id="box"></div>
+</body>
+</html>
