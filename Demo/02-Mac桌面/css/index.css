@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;/*li的圆点*/
+    border: none;
+}
+
+body{
+    background: url("../images/desktop.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none !important;
+    color: white;
+    display: inline-block;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+}
+
+/*头部*/
+#header{
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+
+    /*固定定位*/
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    cursor: pointer;/*鼠标放上后变小手*/
+    z-index: 999;/*层级最高*/
+
+    font-size: 16px;
+}
+
+#header .header-left{
+    display: inline;
+}
+
+#header .header-left .header-left-apple {
+    font-size: 22px;
+}
+
+#header .header-left li{
+    float: left;
+    margin-left: 15px;
+}
+
+#header .header-right{
+    display: inline;
+}
+
+#header .header-right a{
+    float: right;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+#header .header-right .header-right-time{
+    width: 80px;
+}
+
+#header a:hover{
+    color: white;
+    background-color: rgb(42,141,252);
+}
+
+/*内容*/
+#content{
+    position: relative;
+}
+
+#content .file{
+    width: 70px;
+    text-align: center;
+    color: white;
+
+    position: absolute;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+#content .file img{
+    width: 100%;
+}
+
+#content .file:nth-child(1){
+    left: 50px;
+    top: 80px;
+}
+
+#content .file:nth-child(2){
+    left: 50px;
+    top: 200px;
+}
+
+#content .file:nth-child(3){
+    left: 50px;
+    top: 320px;
+}
+
+#content .file img:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+/*尾部*/
+#footer{
+    height: 60px;
+    width: 100%;
+
+    /*定位*/
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+
+    text-align: center;
+    line-height: 55px;/*不知道为什么60px不能垂直居中*/
+}
+
+#footer .dock{
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.4);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid black;
+}
+
+#footer .dock ul{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#footer .dock ul li{
+    float: left;
+    margin: 0 13px;
+
+    /*设置动画的过渡效果*/
+    transition: all 0.15s linear;
+}
+
+#footer .dock ul li img{
+    width: 40px;
+}
+
+/*动画*/
+#footer .dock ul li:hover{
+    /*设置动画方向*/
+    transform-origin: bottom center;
+
+    /*放大1.5倍*/
+    /*scale -> 放大*/
+    transform: scale(1.5);
+}
+
+
+
+
+
