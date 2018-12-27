@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            不区分类型
+                :first-child 选中同级别中第一个标签
+                :last-child 选中同级别中最后一个标签
+                :nth-last-child(n) 选中同级别中倒数第n个标签
+                :nth-child(n) 选中同级别中第n个标签
+                :only-child 选中同级别中唯一子元素标签
+
+            补充：li:first-child 选中的是所有位于同级别中的第一个li标签，假如第一个是其他标签，则同级别内不会再选中
+                 其余选择器同理
+        */
+        li:first-child{
+            color: blue;
+            background-color: green;
+        }
+        li:nth-last-child(1){
+            color: red;
+        }
+
+        /*
+            区分类型
+                :first-of-type 选中同级别中同类型的第一个标签
+                :last-of-type 选中同级别中同类型的最后一个标签
+                :nth-of-type(n) 选中同级别中同类型的第n个标签
+                :nth-last-of-type(n) 选中同级别中同类型倒数第n个标签
+                :only-of-type 选中同级别中唯一同类型子元素标签
+        */
+        a:first-of-type{
+            color: orange;
+        }
+
+        /*
+            奇偶选择
+                :nth-child(odd) 选中同级别中所有的奇数
+                :nth-child(even) 选中同级别中所有的偶数
+                :nth-child(xn+y) x,y是用户自定义的 ，n为计数器(n次幂)，从0开始递增,到元素的总个数停止
+
+            补充：1.index从1开始递增 2.选中的标签为同种标签，不同不选
+        */
+        li:nth-child(odd){
+            font-size: 20px;
+        }
+
+        /*选中以icon-开头的标签(*和^都行)*/
+        [class^="icon-"],
+        [class*=" icon-"]{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1111111li</li>
+        <a href="#">22222222a</a>
+        <a href="#">33333333a</a>
+        <li>4444444li</li>
+        <span>5555555span</span>
+        <li>666666666li</li>
+        <span>777777span</span>
+        <li>888888888li</li>
+        <li>999999999li</li>
+        <li>10li</li>
+        <a href="#">11a</a>
+    </ul>
+    <ul>
+        <li>1-li</li>
+        <a href="#">2-a</a>
+        <li>3-li</li>
+    </ul>
+    <ul>
+        <li class="icon-1">111</li>
+        <li class="test icon-x">222</li>
+        <li class="icon-2">333</li>
+        <li>444</li>
+    </ul>
+</body>
+</html>

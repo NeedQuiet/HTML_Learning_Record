@@ -2,46 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941d7b77-8d51-4766-a68d-67f78977ba61" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/images/Finder-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/images/Launchpad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/images/Safari-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/images/Xcode-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/images/chrome-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/images/desktop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/images/file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/images/qq-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/images/qqmusic-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/images/setting-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础知识点/15-序号选择器.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/百度首页/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/01-百度首页/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/百度首页/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/01-百度首页/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/百度首页/images/bd_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/01-百度首页/images/bd_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/百度首页/images/cell_img1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/01-百度首页/images/cell_img1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/百度首页/images/cell_img2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/01-百度首页/images/cell_img2.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/百度首页/images/cell_img3.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/01-百度首页/images/cell_img3.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/百度首页/images/person_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/01-百度首页/images/person_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/百度首页/images/setting_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/01-百度首页/images/setting_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/百度首页/images/weather.png" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/01-百度首页/images/weather.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/百度首页/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/01-百度首页/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/02-Mac桌面/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/css/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,44 +17,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.58532274">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Demo/02-Mac桌面/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
-                  <folding>
-                    <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Demo/02-Mac桌面/css/index.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="15-序号选择器.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/基础知识点/15-序号选择器.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -107,6 +49,7 @@
       <find>a</find>
       <find>cursor</find>
       <find>16</find>
+      <find>nth</find>
     </findStrings>
     <replaceStrings>
       <replace>relative</replace>
@@ -129,6 +72,7 @@
         <option value="$PROJECT_DIR$/基础知识点/14-背景.html" />
         <option value="$PROJECT_DIR$/Demo/02-Mac桌面/index.html" />
         <option value="$PROJECT_DIR$/Demo/02-Mac桌面/css/index.css" />
+        <option value="$PROJECT_DIR$/基础知识点/15-序号选择器.html" />
       </list>
     </option>
   </component>
@@ -142,9 +86,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="805" />
+    <option name="x" value="552" />
     <option name="y" value="23" />
-    <option name="width" value="1131" />
+    <option name="width" value="1119" />
     <option name="height" value="1006" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -173,6 +117,11 @@
               <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
               <item name="Demo" type="462c0819:PsiDirectoryNode" />
               <item name="02-Mac桌面" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="基础知识点" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -218,18 +167,18 @@
       <workItem from="1545374772563" duration="6122000" />
       <workItem from="1545644454124" duration="4246000" />
       <workItem from="1545726763307" duration="11175000" />
-      <workItem from="1545812708439" duration="3082000" />
+      <workItem from="1545812708439" duration="10873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24625000" />
+    <option name="totallyTimeSpent" value="32416000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="805" y="23" width="1131" height="1006" extended-state="0" />
+    <frame x="552" y="23" width="1119" height="1006" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2182189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32978722" />
@@ -261,7 +210,8 @@
           <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -353,21 +303,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/02-Mac桌面/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="92" column="14" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Demo/02-Mac桌面/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+        <state relative-caret-position="210">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/02-Mac桌面/css/index.css">
+    <entry file="file://$PROJECT_DIR$/基础知识点/15-序号选择器.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+        <state relative-caret-position="285">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
