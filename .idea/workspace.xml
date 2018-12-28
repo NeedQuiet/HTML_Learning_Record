@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941d7b77-8d51-4766-a68d-67f78977ba61" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/基础知识点/15-序号选择器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/AD-scrollimage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/Heads-icon-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/Heads-icon-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/Heads-icon-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/Heads-icon-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/Heads-icon-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/cell-image-01.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/cell-image-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/erweima.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/favorite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/find.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/fontsize.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/huifu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/jianshu-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/message.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/pen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/right-list-001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/right-list-002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/right-list-003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/right-list-004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/right-list-005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/user-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/02-Mac桌面/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/02-Mac桌面/css/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,17 +41,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="15-序号选择器.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/基础知识点/15-序号选择器.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5034722">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/main.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-569">
+                  <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+                  <folding>
+                    <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="e#2552#2556#0" expanded="true" />
+                    <element signature="n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#div#2;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#ul#0;n#div#2;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/css/index.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="582">
+                  <caret line="402" column="1" lean-forward="true" selection-start-line="402" selection-start-column="1" selection-end-line="402" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,6 +99,7 @@
       <find>cursor</find>
       <find>16</find>
       <find>nth</find>
+      <find>&amp;</find>
     </findStrings>
     <replaceStrings>
       <replace>relative</replace>
@@ -73,6 +123,8 @@
         <option value="$PROJECT_DIR$/Demo/02-Mac桌面/index.html" />
         <option value="$PROJECT_DIR$/Demo/02-Mac桌面/css/index.css" />
         <option value="$PROJECT_DIR$/基础知识点/15-序号选择器.html" />
+        <option value="$PROJECT_DIR$/Demo/03-简书首页/css/index.css" />
+        <option value="$PROJECT_DIR$/Demo/03-简书首页/main.html" />
       </list>
     </option>
   </component>
@@ -86,9 +138,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="552" />
-    <option name="y" value="23" />
-    <option name="width" value="1119" />
+    <option name="x" value="560" />
+    <option name="y" value="24" />
+    <option name="width" value="1667" />
     <option name="height" value="1006" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -116,12 +168,14 @@
               <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
               <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
               <item name="Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="02-Mac桌面" type="462c0819:PsiDirectoryNode" />
+              <item name="03-简书首页" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
               <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
-              <item name="基础知识点" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="03-简书首页" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -134,9 +188,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Demo/03-简书首页/images" />
+      <recent name="$PROJECT_DIR$/Demo/03-简书首页" />
       <recent name="$PROJECT_DIR$/Demo/02-Mac桌面/images" />
       <recent name="$PROJECT_DIR$/Demo/02-Mac桌面" />
       <recent name="$PROJECT_DIR$/基础知识点/Image" />
@@ -167,21 +224,22 @@
       <workItem from="1545374772563" duration="6122000" />
       <workItem from="1545644454124" duration="4246000" />
       <workItem from="1545726763307" duration="11175000" />
-      <workItem from="1545812708439" duration="10873000" />
+      <workItem from="1545812708439" duration="34835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32416000" />
+    <option name="totallyTimeSpent" value="56378000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="552" y="23" width="1119" height="1006" extended-state="0" />
+    <frame x="560" y="24" width="1667" height="1006" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2595486" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -194,7 +252,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,10 +379,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识点/04-选择器-常用4.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/基础知识点/15-序号选择器.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="465">
+          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/images/message.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/images/fontsize.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/images/favorite.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="402" column="1" lean-forward="true" selection-start-line="402" selection-start-column="1" selection-end-line="402" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-569">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#2552#2556#0" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#2;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

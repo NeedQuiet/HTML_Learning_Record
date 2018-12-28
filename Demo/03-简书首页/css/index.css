@@ -1,0 +1,456 @@
+/***********通用样式-Start***********/
+*{
+    margin: 0;
+    padding: 0;/*发现只设置padding li的圆点居然不贱了*/
+    box-sizing: border-box;
+    border: none;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    vertical-align: middle;
+}
+
+input{
+    outline: none;
+}
+/***********通用样式-End***********/
+
+/***********头部-Start***********/
+#nav{
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+
+    z-index: 999;/*设置最高层级*/
+
+    /*固定定位*/
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#nav .nav-content{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*左边*/
+#nav .nav-content .nav-content-left{
+    float: left;
+}
+
+#nav .nav-content .nav-content-left a img{
+    width: 100px;
+    height: 56px;
+}
+
+/*中间*/
+#nav .nav-content .nav-content-content{
+    width: 550px;
+    height: 56px;
+    float: left;
+    margin-left: 80px;
+}
+
+#nav .nav-content .nav-content-content ul li{
+    display: inline;
+    /*float: left;*/
+    height: 56px;
+    line-height: 55px;
+}
+
+#nav .nav-content .nav-content-content ul li form{
+    display: inline-block;
+    height: 56px;
+    margin-left: 10px;
+    position: relative;
+}
+
+#nav .nav-content .nav-content-content ul li img{
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+}
+
+#nav .nav-content .nav-content-content ul li a{
+    display: inline-block;
+    height: 100%;
+    padding: 0 15px;
+}
+
+#nav .nav-content .nav-content-content ul li a:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+#nav .nav-content .nav-content-content ul li input{
+    width: 225px;
+    height: 38px;
+    background-color: #eeeeee;
+    border-radius: 40px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #b8b8b8;
+}
+
+#nav .nav-content .nav-content-content ul li form img{
+    position: absolute;
+    right: 10px;
+    top: 16px;
+}
+
+/*右边*/
+#nav .nav-content .nav-content-right{
+    width: 250px;
+    height: 56px;
+    float: right;
+    line-height: 55px;
+    padding: 0 15px;
+}
+
+#nav .nav-content .nav-content-right .fontsize-btn,
+#nav .nav-content .nav-content-right .write-btn{
+    width: 23px;
+    height: 23px;
+    margin-top: -2px;
+}
+
+#nav .nav-content .nav-content-right .head-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: -2px;
+}
+
+#nav .nav-content .nav-content-right a{
+    background-color: #ea6f5a;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    margin-left: 20px;
+    color: white;
+}
+
+#nav .nav-content .nav-content-right .write-btn{
+    margin-left: 10px;
+}
+
+/***********头部-End***********/
+
+/***********内容-Start***********/
+#main{
+    width: 1000px;
+    height: 2000px;
+    margin: 70px auto;
+}
+
+/*左边*/
+#main .main-left{
+    width: 630px;
+    height: 800px;
+    float: left;
+}
+
+#main .main-left .main-left-scroll img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#main .main-left .main-left-center{
+    width: 100%;
+    height: 110px;
+    margin-top: 20px;
+}
+
+#main .main-left .main-left-center a{
+    display: inline-block;
+    width: 98px;
+    height: 32px;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+    margin: 0 23px 18px 0;
+    border-radius: 7px;
+    font-size: 14px;
+    background-color: rgb(248,246,247);
+}
+
+#main .main-left .main-left-center a:last-child{
+    background-color: transparent;/*删除背景色*/
+    border: none;
+    line-height: 32px;
+    color: #b8b8b8;
+}
+
+#main .main-left .main-left-center a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+#main .main-left .main-left-center span{
+    display: inline-block;
+    height: 30px;
+    vertical-align: top;
+    line-height: 30px;
+}
+
+/*cell内容*/
+#main .main-left .main-left-cell{
+    height: 500px;
+}
+
+#main .main-left .main-left-cell .cell
+{
+    border-top: 1px solid #f0f0f0;
+    height: 140px;
+    padding: 10px 0;
+}
+
+#main .main-left .main-left-cell .cell a img{
+    width: 17px;
+    height: 17px;
+}
+
+#main .main-left .main-left-cell .cell dt{
+    width: 20%;
+    height: 100px;
+    float: right;
+}
+
+#main .main-left .main-left-cell .cell dt img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#main .main-left .main-left-cell .cell dd{
+    width: 80%;
+    float: left;
+}
+
+
+#main .main-left .main-left-cell .cell dd p{
+    width: 494px;
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666666;
+}
+
+#main .main-left .main-left-cell .cell a{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+    font-size: 10px;
+    color: #b4b4b4;
+}
+
+#main .main-left .main-left-cell .cell a img,
+#main .main-left .main-left-cell .cell a span{
+    vertical-align: middle;
+}
+
+/*右边*/
+#main .main-right{
+    width: 320px;
+    height: 800px;
+    float: right;
+}
+
+#main .main-right .main-right-top{
+    width: 288px;
+    margin: -8px auto 0 auto;
+    height: 290px;
+}
+
+#main .main-right .main-right-top a{
+    display: block;
+    margin: 4px 0;
+    height: 52px;
+}
+
+#main .main-right .main-right-top a img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+#main .main-right .main-right-center{
+    width: 90%;
+    height: 90px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin: 0 auto;
+}
+#main .main-right .main-right-center dl{
+    width: 100%;
+    height: 100%;
+}
+
+#main .main-right .main-right-center dl dt{
+    float: left;
+}
+
+#main .main-right .main-right-center dl dd{
+    float: right;
+    font-size: 14px;
+    color: #b4b4b4;
+}
+
+#main .main-right .main-right-center dl dd p:first-child{
+    margin-top: 6px;
+    font-size: 16px;
+    color: black;
+}
+
+#main .main-right .main-right-center dl dd p:last-child{
+    margin-top: 3px;
+}
+
+#main .main-right .main-right-center dl dt img{
+    width: 60px;
+    height: 60px;
+}
+
+
+/*底部*/
+#main .main-right .main-right-bottom{
+    height: 300px;
+    width: 90%;
+    margin: 14px auto 0 auto;
+}
+
+#main .main-right .main-right-bottom .main-right-bottom-head{
+    height: 45px;
+    line-height: 35px;
+    padding: 5px 0px;
+    color: #b4b4b4;
+    font-size: 14px;
+}
+
+#main .main-right .main-right-bottom .main-right-bottom-head span:first-child{
+    float: left;
+}
+
+#main .main-right .main-right-bottom .main-right-bottom-head span:last-child{
+    float: right;
+}
+
+#main .main-right .main-right-bottom .main-right-bottom-head span a{
+    color: #b4b4b4;
+}
+
+#main .main-right .main-right-bottom ul{
+}
+
+#main .main-right .main-right-bottom ul img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    margin-right: 10px;
+}
+
+#main .main-right .main-right-bottom ul li{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+#main .main-right .main-right-bottom ul li p{
+    width: 150px;
+    font-size: 12px;
+    color: #b4b4b4;
+}
+
+#main .main-right .main-right-bottom ul li a{
+    font-size: 14px;
+}
+
+#main .main-right .main-right-bottom ul li .head-icon{
+    float: left;
+    margin-top: 6px;
+}
+
+#main .main-right .main-right-bottom ul li div{
+    padding-top: 8px;
+    height: 60px;
+    width: 160px;
+    float: left;
+}
+
+#main .main-right .main-right-bottom ul li div a{
+    font-size: 14px;
+}
+
+#main .main-right .main-right-bottom ul li div p{
+    margin-top: 3px;
+}
+
+#main .main-right .main-right-bottom ul li .focus{
+    position: absolute;
+    right: 0;
+    top: 7px;
+    color: green;
+}
+
+#main .main-right .main-right-bottom .main-right-bottom-footer{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #b4b4b4;
+    margin-top: 10px;
+    font-size: 13px;
+    background-color: #f7f7f7;
+}
+
+/***********内容-End***********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
