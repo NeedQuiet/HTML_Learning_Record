@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单和表格小练习</title>
+    <style>
+        #app{
+            margin: 50px auto;
+            width: 600px;
+        }
+
+        fieldset{
+            border: 1px solid orange;
+        }
+
+        fieldset input{
+            height: 30px;
+            width: 200px;
+            margin: 10px 0;
+        }
+
+        table{
+            width: 100%;
+            border: 2px solid orange;
+            text-align: center;
+        }
+
+        table thead{
+            background-color: orange;
+            color: white;
+        }
+
+        table tr{
+            line-height: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--第一部分: 表单-->
+        <fieldset>
+            <!--分组名称-->
+            <legend>录入系统</legend>
+            <div>
+                <span>姓名：</span>
+                <input type="text" placeholder="请输入姓名">
+            </div>
+            <div>
+                <span>年龄：</span>
+                <input type="number" placeholder="请输入姓名">
+            </div>
+            <div>
+                <span>姓名：</span>
+                <select>
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select>
+            </div>
+            <div>
+                <span>手机</span>
+                <input type="text" placeholder="请输入手机号码">
+            </div>
+            <input type="submit" value="创建新用户">
+        </fieldset>
+        <!--第二部分: 表格-->
+        <table>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                    <th>手机</th>
+                    <th>删除</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>周杰伦1</td>
+                    <td>男</td>
+                    <td>35</td>
+                    <td>12312312335</td>
+                    <td>
+                        <button>删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>周杰2</td>
+                    <td>男</td>
+                    <td>35</td>
+                    <td>12312312335</td>
+                    <td>
+                        <button>删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>周杰3</td>
+                    <td>男</td>
+                    <td>35</td>
+                    <td>12312312335</td>
+                    <td>
+                        <button>删除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
