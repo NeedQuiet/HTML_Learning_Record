@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941d7b77-8d51-4766-a68d-67f78977ba61" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/AD-scrollimage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/Heads-icon-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/Heads-icon-02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/Heads-icon-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/Heads-icon-04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/Heads-icon-05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/cell-image-01.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/cell-image-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/erweima.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/favorite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/find.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/fontsize.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/huifu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/jianshu-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/message.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/pen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/right-list-001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/right-list-002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/right-list-003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/right-list-004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/right-list-005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/images/user-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/03-简书首页/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/04-登录注册/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/04-登录注册/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/04-登录注册/images/QQ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/04-登录注册/images/wechat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/04-登录注册/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,21 +20,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5034722">
+    <splitter split-orientation="horizontal" split-proportion="0.5347222">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/main.html">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Demo/04-登录注册/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-569">
-                  <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+                <state relative-caret-position="570">
+                  <caret line="73" column="64" selection-start-line="73" selection-start-column="64" selection-end-line="73" selection-end-column="64" />
                   <folding>
-                    <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="e#2552#2556#0" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#0;n#div#2;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#ul#0;n#div#2;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#style#0;n#span#0;n#h4#0;n#div#4;n#from#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
                   </folding>
                 </state>
               </provider>
@@ -64,12 +41,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/css/index.css">
+            <entry file="file://$PROJECT_DIR$/Demo/04-登录注册/css/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="582">
-                  <caret line="402" column="1" lean-forward="true" selection-start-line="402" selection-start-column="1" selection-end-line="402" selection-end-column="1" />
+                <state relative-caret-position="303">
+                  <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -100,6 +77,7 @@
       <find>16</find>
       <find>nth</find>
       <find>&amp;</find>
+      <find>btn</find>
     </findStrings>
     <replaceStrings>
       <replace>relative</replace>
@@ -125,6 +103,9 @@
         <option value="$PROJECT_DIR$/基础知识点/15-序号选择器.html" />
         <option value="$PROJECT_DIR$/Demo/03-简书首页/css/index.css" />
         <option value="$PROJECT_DIR$/Demo/03-简书首页/main.html" />
+        <option value="$PROJECT_DIR$/基础知识点/16-表单和表格.html" />
+        <option value="$PROJECT_DIR$/Demo/04-登录注册/index.html" />
+        <option value="$PROJECT_DIR$/Demo/04-登录注册/css/index.css" />
       </list>
     </option>
   </component>
@@ -138,10 +119,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="560" />
-    <option name="y" value="24" />
-    <option name="width" value="1667" />
-    <option name="height" value="1006" />
+    <option name="x" value="782" />
+    <option name="y" value="23" />
+    <option name="width" value="1008" />
+    <option name="height" value="986" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -151,7 +132,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,13 +154,18 @@
               <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
               <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
               <item name="Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="03-简书首页" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="04-登录注册" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="基础知识点" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,12 +176,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Demo/04-登录注册" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Demo/04-登录注册/images" />
       <recent name="$PROJECT_DIR$/Demo/03-简书首页/images" />
       <recent name="$PROJECT_DIR$/Demo/03-简书首页" />
       <recent name="$PROJECT_DIR$/Demo/02-Mac桌面/images" />
       <recent name="$PROJECT_DIR$/Demo/02-Mac桌面" />
-      <recent name="$PROJECT_DIR$/基础知识点/Image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -225,21 +213,23 @@
       <workItem from="1545644454124" duration="4246000" />
       <workItem from="1545726763307" duration="11175000" />
       <workItem from="1545812708439" duration="34835000" />
+      <workItem from="1546070704365" duration="3282000" />
+      <workItem from="1546408880172" duration="7252000" />
+      <workItem from="1546482270484" duration="2842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56378000" />
+    <option name="totallyTimeSpent" value="69754000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="560" y="24" width="1667" height="1006" extended-state="0" />
+    <frame x="782" y="23" width="1008" height="986" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2595486" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25865582" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32978722" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -252,6 +242,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,16 +251,64 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Demo/04-登录注册/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#h4#0;n#div#4;n#from#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/04-登录注册/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识点/16-表单和表格.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6030">
+          <caret line="402" column="1" lean-forward="true" selection-start-line="402" selection-start-column="1" selection-end-line="402" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Demo/02-Mac桌面/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -371,16 +410,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识点/04-选择器-常用4.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/基础知识点/15-序号选择器.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -389,34 +420,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/images/message.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/images/fontsize.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/images/favorite.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="402" column="1" lean-forward="true" selection-start-line="402" selection-start-column="1" selection-end-line="402" selection-end-column="1" />
+        <state relative-caret-position="27">
+          <caret line="365" selection-start-line="365" selection-end-line="365" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo/03-简书首页/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-569">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        <state relative-caret-position="315">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识点/16-表单和表格.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/04-登录注册/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="73" column="64" selection-start-line="73" selection-start-column="64" selection-end-line="73" selection-end-column="64" />
           <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#2552#2556#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#2;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#h4#0;n#div#4;n#from#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/04-登录注册/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
         </state>
       </provider>
     </entry>
