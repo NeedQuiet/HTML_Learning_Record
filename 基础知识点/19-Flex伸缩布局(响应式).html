@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        htlm{
+            font-size: 10px;
+        }
+
+        body{
+            font-size: 1.1rem;
+        }
+
+        #box{
+            width: 80%;
+            height: 10rem;
+            background-color: skyblue;
+            margin: 5rem auto;
+
+            /*伸缩布局*/
+            display: flex;/*注：开启flex后，行内标签会转化为块级标签*/
+
+            /*主轴方向*/
+            flex-direction: row;
+        }
+
+        .item{
+            margin: 0.5rem;
+            background-color: purple;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="item" style="flex: 4;height: 6rem;">item1</div>
+        <div class="item" style="flex: 2;height: 7rem;">item2</div>
+        <div class="item" style="flex: 3;height: 8rem;">item3</div>
+        <div class="item" style="flex: 4;height: 6rem;">item4</div>
+    </div>
+</body>
+</html>

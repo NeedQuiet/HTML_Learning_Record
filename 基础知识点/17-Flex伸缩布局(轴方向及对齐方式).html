@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        htlm{
+            font-size: 10px;
+        }
+
+        body{
+            font-size: 1.1rem;
+        }
+
+        #box{
+            width: 25rem;
+            height: 25rem;
+            background-color: skyblue;
+            margin: 5rem auto;
+
+            /*伸缩布局*/
+            display: flex;/*注：开启flex后，行内标签会转化为块级标签*/
+
+            /*主轴的方向*/
+            flex-direction: row;/*默认的横向*/
+            /*flex-direction: row-reverse;!*横向反转*!*/
+            /*flex-direction: column;!*纵向*!*/
+            /*flex-direction: column-reverse;!*反向纵向*!*/
+
+            /*主轴上子项的对齐方式*/
+            /*justify-content: flex-start;!*默认值，表示与行的起始位置对齐*!*/
+            /*justify-content: flex-end;!*表示与行的结束位置对齐*!*/
+            justify-content: center;/*表示与行中间对齐*/
+            /*justify-content: space-between;!* 表示两端对齐，中间间距相等。要注意特殊情况，当剩余空间为负数或者只有一个项时，效果等同于flex-start*!*/
+            /*justify-content: space-around;!*表示间距相等，中间间距是两端间距的2倍。要注意特殊情况，当剩余空间为负数或者只有一个项时，效果等同于center*!*/
+
+            /*侧轴上子项的对齐方式*/
+            /*align-items: stretch;!* 默认值，当Flex子项为设置高度或者高度值为auto时，stretch起作用，将Flex子项高度设置为行高度，这里需要注意，在只有一行的情况下，行的高度为容器的高度，即Flex子项高度为容器的高度*!*/
+            /*align-items: flex-start;!*表示与侧轴开始位置对齐*!*/
+            /*align-items: flex-end;!*表示与侧轴结束位置对齐*!*/
+            align-items: center;/*表示与侧轴中间对齐*/
+            /*align-items: baseline;!*表示基线对齐，当行内轴与侧轴在同一线上，即所有Flex子项的基线在同一线上时，效果等同于flex-start*!*/
+        }
+
+        .item{
+            width: 5rem;
+            /*height: 5rem;*/
+            margin: 0.5rem;
+            background-color: purple;
+            text-align: center;
+            line-height: 5rem;
+            color: white;
+        }
+
+        #box>div:nth-child(2){
+            /*单独子项目对齐方式,取值参考align-items*/
+            align-self: flex-start;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="item" style="height: 6rem;">item1</div>
+        <div class="item" style="height: 7rem;">item2</div>
+        <div class="item" style="height: 8rem;">item3</div>
+        <span style="background-color: red;">s1</span>
+        <span style="background-color: green;">s2</span>
+    </div>
+</body>
+</html>

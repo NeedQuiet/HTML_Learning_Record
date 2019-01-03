@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        htlm{
+            font-size: 10px;
+        }
+
+        body{
+            font-size: 1.1rem;
+        }
+
+        #box{
+            width: 25rem;
+            height: 40rem;
+            background-color: skyblue;
+            margin: 5rem auto;
+
+            /*伸缩布局*/
+            display: flex;/*注：开启flex后，行内标签会转化为块级标签*/
+
+            /*主轴方向*/
+            flex-direction: row;
+
+            /*指定主轴上子项目是否换行*/
+            /*flex-wrap: nowrap;!*默认值，表示不换行，Flex子项可能会溢出/*/
+            flex-wrap: wrap;/*表示换行，溢出的Flex子项会被放到下一行*/
+            /*flex-wrap: wrap-reverse;!*表示反向换行*!*/
+
+            /*主、侧轴居中*/
+            /*justify-content: center;*/
+            /*align-items: center;*/
+
+            /*多行对齐方式*/
+            /*align-content: flex-start;*/
+            align-content: flex-end;
+            /*align-content: center;*/
+
+            /*可以取消注释看和align-content的区别*/
+            /*align-items: flex-end;*/
+        }
+
+        .item{
+            margin: 0.5rem;
+            background-color: purple;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="item" style="width: 6rem; height: 6rem;">item1</div>
+        <div class="item" style="width: 4rem; height: 7rem;">item2</div>
+        <div class="item" style="width: 7rem; height: 8rem;">item3</div>
+        <div class="item" style="width: 6rem; height: 6rem;">item4</div>
+        <div class="item" style="width: 4rem; height: 7rem;">item5</div>
+        <div class="item" style="width: 7rem; height: 8rem;">item6</div>
+        <div class="item" style="width: 6rem; height: 6rem;">item7</div>
+        <div class="item" style="width: 4rem; height: 7rem;">item8</div>
+        <div class="item" style="width: 7rem; height: 8rem;">item9</div>
+    </div>
+</body>
+</html>

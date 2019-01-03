@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941d7b77-8d51-4766-a68d-67f78977ba61" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Demo/04-登录注册/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/04-登录注册/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/04-登录注册/images/QQ.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/04-登录注册/images/wechat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/04-登录注册/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础知识点/17-Flex伸缩布局(轴方向及对齐方式).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础知识点/18-Flex伸缩布局(换行及多行对齐).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础知识点/19-Flex伸缩布局(响应式).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,40 +18,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5347222">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Demo/04-登录注册/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="73" column="64" selection-start-line="73" selection-start-column="64" selection-end-line="73" selection-end-column="64" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#style#0;n#span#0;n#h4#0;n#div#4;n#from#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Demo/04-登录注册/css/index.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="303">
-                  <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="19-Flex伸缩布局(响应式).html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/基础知识点/19-Flex伸缩布局(响应式).html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,6 +87,15 @@
         <option value="$PROJECT_DIR$/基础知识点/16-表单和表格.html" />
         <option value="$PROJECT_DIR$/Demo/04-登录注册/index.html" />
         <option value="$PROJECT_DIR$/Demo/04-登录注册/css/index.css" />
+        <option value="$PROJECT_DIR$/基础知识点/17-Flex伸缩布局(主轴方向).html" />
+        <option value="$PROJECT_DIR$/基础知识点/17-Flex伸缩布局.html" />
+        <option value="$PROJECT_DIR$/基础知识点/17-Flex伸缩布局1.html" />
+        <option value="$PROJECT_DIR$/基础知识点/17-Flex伸缩布局2.html" />
+        <option value="$PROJECT_DIR$/基础知识点/19-Flex伸缩布局(轴方向及对齐方式).html" />
+        <option value="$PROJECT_DIR$/基础知识点/17-Flex伸缩布局(轴方向及对齐方式).html" />
+        <option value="$PROJECT_DIR$/基础知识点/18-Flex伸缩布局(子项目换行).html" />
+        <option value="$PROJECT_DIR$/基础知识点/18-Flex伸缩布局(换行及多行对齐).html" />
+        <option value="$PROJECT_DIR$/基础知识点/19-Flex伸缩布局(响应式).html" />
       </list>
     </option>
   </component>
@@ -119,7 +109,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="782" />
+    <option name="x" value="822" />
     <option name="y" value="23" />
     <option name="width" value="1008" />
     <option name="height" value="986" />
@@ -142,23 +132,6 @@
             <path>
               <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
               <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
-              <item name="Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
-              <item name="Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="03-简书首页" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
-              <item name="Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="04-登录注册" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
               <item name="基础知识点" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -176,15 +149,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Demo/04-登录注册" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Demo/04-登录注册/images" />
       <recent name="$PROJECT_DIR$/Demo/03-简书首页/images" />
       <recent name="$PROJECT_DIR$/Demo/03-简书首页" />
       <recent name="$PROJECT_DIR$/Demo/02-Mac桌面/images" />
       <recent name="$PROJECT_DIR$/Demo/02-Mac桌面" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/基础知识点" />
+      <recent name="$PROJECT_DIR$/Demo/04-登录注册" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -215,18 +189,18 @@
       <workItem from="1545812708439" duration="34835000" />
       <workItem from="1546070704365" duration="3282000" />
       <workItem from="1546408880172" duration="7252000" />
-      <workItem from="1546482270484" duration="2842000" />
+      <workItem from="1546482270484" duration="12399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69754000" />
+    <option name="totallyTimeSpent" value="79311000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="782" y="23" width="1008" height="986" extended-state="0" />
+    <frame x="822" y="23" width="1008" height="986" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25865582" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25892857" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32978722" />
@@ -264,6 +238,8 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#from#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#span#0;n#h4#0;n#div#4;n#from#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
           </folding>
@@ -288,6 +264,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -434,30 +414,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识点/16-表单和表格.html">
+    <entry file="file://$PROJECT_DIR$/Demo/04-登录注册/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="228">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo/04-登录注册/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="73" column="64" selection-start-line="73" selection-start-column="64" selection-end-line="73" selection-end-column="64" />
+        <state relative-caret-position="270">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#from#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#span#0;n#h4#0;n#div#4;n#from#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/04-登录注册/css/index.css">
+    <entry file="file://$PROJECT_DIR$/基础知识点/16-表单和表格.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="585">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识点/19-Flex伸缩布局(轴方向及对齐方式).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识点/17-Flex伸缩布局(轴方向及对齐方式).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识点/18-Flex伸缩布局(换行及多行对齐).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识点/19-Flex伸缩布局(响应式).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
