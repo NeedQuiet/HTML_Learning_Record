@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            transition: all 0.5s ease-in-out;
+        }
+
+        /*transition 属性是一个简写属性，用于设置四个过渡属性：*/
+        /*1.transition-property*/
+        /*2.transition-duration*/
+        /*3.transition-timing-function*/
+        /*4.transition-delay*/
+
+        /*transition-timing-function 属性规定过渡效果的速度曲线。*/
+        /*linear 规定以相同速度开始至结束的过渡效果（等于 cubic-bezier(0,0,1,1)）*/
+        /*ease 规定慢速开始，然后变快，然后慢速结束的过渡效果（cubic-bezier(0.25,0.1,0.25,1)）*/
+        /*ease-in 规定以慢速开始的过渡效果（等于 cubic-bezier(0.42,0,1,1)）*/
+        /*ease-out 规定以慢速结束的过渡效果（等于 cubic-bezier(0,0,0.58,1)）*/
+        /*ease-in-out 规定以慢速开始和结束的过渡效果（等于 cubic-bezier(0.42,0,0.58,1)）*/
+        /*cubic-bezier(n,n,n,n) 在 cubic-bezier 函数中定义自己的值。可能的值是 0 至 1 之间的数值*/
+
+
+        /*鼠标点击没有松开的状态*/
+        div:active{
+            /*transform: translateX(100px);!*横向移动*!*/
+            /*transform: translateY(100px);!*纵向移动*!*/
+            transform: translate(100px, 200px);
+        }
+    </style>
+</head>
+<body>
+    <div>点击移动</div>
+</body>
+</html>

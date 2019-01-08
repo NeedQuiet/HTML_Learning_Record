@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>透视</title>
+    <style>
+        body{
+            /*透视*/
+            /*视距距离，眼睛到屏幕的距离*/
+            /*视距越大，效果越不明显*/
+            /*视距越小，透视效果越明显*/
+            perspective: 100px;
+        }
+
+        img{
+            margin: 300px;
+            transition: all 2s  linear;
+        }
+
+        img:hover{
+            /*旋转*/
+            /*transform:rotateX(360deg);*/
+            /*transform:rotateY(360deg);*/
+            /*transform:rotate3d(100,110,200,360deg);*/
+
+            transform: translateZ(100px);
+        }
+
+    </style>
+</head>
+<body>
+    <img src="Image/desktop.jpg" alt="" width="30%">
+</body>
+</html>
