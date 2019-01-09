@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941d7b77-8d51-4766-a68d-67f78977ba61" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/基础知识点/23-2D变形-移动(translate).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识点/24-2D变形-缩放(scale).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识点/25-2D变形-旋转(rotate).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识点/26-2D变形-倾斜(skew).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识点/27-透视(perspective).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识点/Image/desktop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识点/Image/puke.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础知识点/28-3D变形-背靠背图片翻转.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础知识点/29-C3实现无缝滚动.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础知识点/Image/iPhone2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础知识点/Image/iphone1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,13 +20,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="27-透视(perspective).html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/基础知识点/27-透视(perspective).html">
+      <file leaf-file-name="28-3D变形-背靠背图片翻转.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/基础知识点/28-3D变形-背靠背图片翻转.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="450">
+              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="29-C3实现无缝滚动.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/基础知识点/29-C3实现无缝滚动.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="730">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iphone1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/基础知识点/Image/iphone1.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -104,6 +115,8 @@
         <option value="$PROJECT_DIR$/基础知识点/24-2D变形-缩放(scale).html" />
         <option value="$PROJECT_DIR$/基础知识点/27-透视.html" />
         <option value="$PROJECT_DIR$/基础知识点/27-透视(perspective).html" />
+        <option value="$PROJECT_DIR$/基础知识点/28-3D变形-背靠背图片翻转.html" />
+        <option value="$PROJECT_DIR$/基础知识点/29-C3实现无缝滚动.html" />
       </list>
     </option>
   </component>
@@ -117,7 +130,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="880" />
+    <option name="x" value="849" />
     <option name="y" value="23" />
     <option name="width" value="1026" />
     <option name="height" value="986" />
@@ -163,17 +176,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/基础知识点/Image" />
+      <recent name="$PROJECT_DIR$/基础知识点" />
+      <recent name="$PROJECT_DIR$/Demo/04-登录注册" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/基础知识点/Image" />
       <recent name="$PROJECT_DIR$/Demo/04-登录注册/images" />
       <recent name="$PROJECT_DIR$/Demo/03-简书首页/images" />
       <recent name="$PROJECT_DIR$/Demo/03-简书首页" />
       <recent name="$PROJECT_DIR$/Demo/02-Mac桌面/images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/基础知识点/Image" />
-      <recent name="$PROJECT_DIR$/基础知识点" />
-      <recent name="$PROJECT_DIR$/Demo/04-登录注册" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -208,20 +221,22 @@
       <workItem from="1546568274211" duration="6125000" />
       <workItem from="1546850291548" duration="2625000" />
       <workItem from="1546937157138" duration="6263000" />
+      <workItem from="1547005220454" duration="3168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94766000" />
+    <option name="totallyTimeSpent" value="97934000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="880" y="23" width="1026" height="986" extended-state="0" />
+    <frame x="849" y="23" width="1026" height="986" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25438598" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -234,7 +249,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,8 +570,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/基础知识点/27-透视(perspective).html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="375">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识点/28-3D变形-背靠背图片翻转.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识点/Image/iphone1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识点/29-C3实现无缝滚动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>

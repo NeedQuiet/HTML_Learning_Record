@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C3实现无缝滚动</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        nav{
+            width: 830px;
+            height: 337px;
+            border: 1px solid orange;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        nav li{
+            float: left;
+            width: 166px;
+            height: 100%;
+        }
+
+        nav li img{
+            width: 100%;
+            height: 100%;
+        }
+
+        nav ul{
+            width: 200%;
+            animation: navUlMoving 5s linear infinite;
+            /*infinite：无限次*/
+        }
+
+        /*自定义动画*/
+
+        @keyframes navUlMoving {
+            from{transform: translateX(0)}
+            to{transform: translateX(-830px)}
+        }
+
+        nav ul:hover{
+            animation-play-state: paused;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="Image/iphone1.png" alt=""></li>
+            <li><img src="Image/iphone2.png" alt=""></li>
+            <li><img src="Image/iphone1.png" alt=""></li>
+            <li><img src="Image/iphone2.png" alt=""></li>
+            <li><img src="Image/iphone1.png" alt=""></li>
+
+            <!--实现轮播效果：先将内容x2，然后将ul宽度x2-->
+            <li><img src="Image/iphone1.png" alt=""></li>
+            <li><img src="Image/iphone2.png" alt=""></li>
+            <li><img src="Image/iphone1.png" alt=""></li>
+            <li><img src="Image/iphone2.png" alt=""></li>
+            <li><img src="Image/iphone1.png" alt=""></li>
+        </ul>
+    </nav>
+</body>
+</html>
