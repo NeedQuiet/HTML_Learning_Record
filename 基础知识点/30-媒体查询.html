@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>媒体查询</title>
+    <style>
+        /*媒体查询*/
+        @media screen and (max-width: 300px){
+            body{
+                background-color: red;
+            }
+
+            #test{
+                color: white;
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width: 800px){
+            body{
+                background-color: green;
+            }
+        }
+
+        @media screen and (min-width: 800px) and (max-width: 1000px){
+            body{
+                background-color: blue;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            body{
+                background-color: purple;
+            }
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <!--
+    要求：
+        根据屏幕尺寸改变背景颜色：
+            宽度 < 500 ：红色
+            宽度在 500 - 800 ：绿色
+            宽度在 800 - 1000 ：蓝色
+            宽度 > 1000 紫色
+    -->
+    <div id="test">测试div</div>
+</body>
+</html>
