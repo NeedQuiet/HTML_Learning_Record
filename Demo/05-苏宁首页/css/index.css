@@ -154,7 +154,414 @@
 /*********************顶部搜索-结束-***********************/
 
 
+/*********************导航-结束-***********************/
+.sn-nav{
+    width: 100%;
+    height: 3.8rem;
+}
 
+.sn-nav-menu{
+    width: 19rem;
+    height: 3.8rem;
+    background-color: #F90;
+    float: left;
+}
+
+.sn-nav-menu .sn-nav-menu-all{
+    height: 3.8rem;
+}
+
+.sn-nav-menu .sn-nav-menu-all a{
+    display: inline-block;
+    width: 100%;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.sn-nav-menu .sn-nav-menu-all i{
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../images/index.png) 0 0;
+    float: left;
+    margin-top: 1.4rem;
+}
+
+.sn-nav-menu .sn-nav-menu-all span{
+    float: left;
+    margin-left: 0.7rem;
+}
+
+.sn-nav-menu:hover{
+    background-color: #F80;
+}
+
+.sn-nav-items{
+    float: left;
+    width: 78.5rem;
+    height: 3.8rem;
+    padding-left: 1rem;
+    line-height: 3.8rem;
+}
+
+.sn-nav-items a{
+    float: left;
+    display: block;
+    color: black;
+    height: 3.8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2.5rem;
+}
+
+.sn-nav-items a:hover{
+    color: #F80;
+}
+
+.sn-nav .sn-nav-ad{
+    width: 17rem;
+    height: 3.8rem;
+    float: right;
+}
+/*********************导航-结束-***********************/
+
+/*********************轮播中心-开始***********************/
+
+/*双飞翼布局*/
+.sn-casual{
+    height: 48.2rem;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    position: relative;
+}
+
+.sn-casual .casual-left{
+    float: left;
+    height: 48.2rem;
+    width: 19rem;
+    margin-left: -100%;
+    background-color: #333;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+.sn-casual .casual-right{
+    float: left;
+    height: 48.2rem;
+    width: 17rem;
+    margin-left: -17rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: relative;
+}
+
+.sn-casual .casual-center{
+    float: left;
+    width: 100%;
+    height: 48.2rem;
+}
+
+.sn-casual .casual-center .casual-center-w{
+    margin: 0 17rem 0 19rem;
+    height: 100%;
+    background-color: red;
+    position: relative;
+}
+
+/*左侧快捷标签list*/
+.sn-casual .casual-left ul li{
+    height: 3.2rem;
+    width: 19rem;
+    padding-left: 1rem;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 3.2rem;
+    box-sizing: border-box;
+}
+
+.sn-casual .casual-left ul li:hover{
+    background-color: gray;
+}
+
+.sn-casual .casual-left ul li a{
+    color: white;
+    margin: 0 0.5rem;
+}
+
+.sn-casual .casual-left ul li a:hover{
+    color: #F90;
+}
+
+/*左右两边的背景图*/
+.sn-casual .casual-center .casual-center-w .bg-image{
+    width: 100%;
+    height: 100%;
+}
+
+.sn-casual .casual-center .casual-center-w .bg-image img:first-child{
+    float: left;
+    margin-left: -54.5rem;
+}
+
+.sn-casual .casual-center .casual-center-w .bg-image img:last-child{
+    float: right;
+    margin-right: -54.5rem;
+}
+
+/*右侧*/
+.sn-casual .casual-right{
+    background-color: white;
+}
+.sn-casual .casual-right .user-info{
+    width: 17rem;
+    height: 16.9em;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.sn-casual .casual-right .user-info .user-img{
+    width: 5.2rem;
+    height: 5.3rem;
+    background: url("../images/index.png") -93px -23px ;
+    margin: 2rem auto;
+}
+
+.sn-casual .casual-right .user-info .button{
+    height: 4.3rem;
+    width: 100%;
+    line-height: 4.3rem;
+    box-sizing: border-box;
+}
+
+.sn-casual .casual-right .user-info .button a{
+    display: inline-block;
+    width: 7rem;
+    height: 2.2rem;
+    margin-top: 1.05rem;
+    line-height: 2.2rem;
+    margin-left: 1rem;
+    float: left;
+    color: #F90;
+}
+
+.sn-casual .casual-right .user-info .button a:first-child{
+    border: 1px solid #F90;
+    width: 6.9rem;
+    height: 2.1rem;
+}
+
+.sn-casual .casual-right .user-info .button a:last-child{
+    background: url("../images/index.png") -295px -251px;
+}
+
+.sn-casual .casual-right .user-info .bottom {
+    width: 100%;
+    height: 1.8rem;
+    margin-top: 1rem;
+}
+
+.sn-casual .casual-right .user-info .bottom a{
+    float: left;
+    display: inline-block;
+    width: 7rem;
+    height: 1.8rem;
+    margin-left: 1rem;
+}
+
+.sn-casual .casual-right .user-info .bottom a:first-child{
+    background: url("../images/index.png") -670px -256px;
+}
+
+.sn-casual .casual-right .user-info .bottom a:last-child{
+    background: url("../images/index.png") -670px -288px;
+}
+
+/*右侧-头条*/
+.sn-casual .casual-right .toutitao{
+    width: 17rem;
+    height: 16.7rem;
+    border-bottom: 1px solid #f2f2f2;
+    overflow: hidden;
+}
+
+.sn-casual .casual-right .toutitao ul{
+    animation: toutiaoMoving 4s ease-in-out infinite;
+}
+
+.sn-casual .casual-right .toutitao ul:hover{
+    animation-play-state: paused;
+}
+
+.sn-casual .casual-right .toutitao ul li{
+    width: 100%;
+    height: 4.7em;
+}
+
+.sn-casual .casual-right .toutitao ul li a{
+    display: inline-block;
+    width: 17rem;
+    height: 4.7em;
+    padding: 1rem 1rem 0 1rem;
+    box-sizing: border-box;
+    color: black;
+}
+
+.sn-casual .casual-right .toutitao ul li a:hover{
+    color: #F90;
+}
+
+.sn-casual .casual-right .toutitao ul li a i{
+    color: #F90;
+    margin-right: 0.3rem;
+}
+
+@keyframes toutiaoMoving {
+    60%{transform: translateY(0)}
+    100%{transform: translateY(-16.7rem)}
+}
+
+/*右侧-快捷按钮*/
+.sn-casual .casual-right .kuaijie{
+
+}
+
+.sn-casual .casual-right .kuaijie ul li
+{
+    float: left;
+    width: 5.6rem;
+    text-align: center;
+}
+
+.sn-casual .casual-right .kuaijie ul li:nth-child(1),
+.sn-casual .casual-right .kuaijie ul li:nth-child(2),
+.sn-casual .casual-right .kuaijie ul li:nth-child(4),
+.sn-casual .casual-right .kuaijie ul li:nth-child(5){
+    border-right: 0.1rem solid #f2f2f2;
+}
+
+.sn-casual .casual-right .kuaijie ul li:nth-child(1),
+.sn-casual .casual-right .kuaijie ul li:nth-child(2),
+.sn-casual .casual-right .kuaijie ul li:nth-child(3){
+    border-bottom: 1px solid #f2f2f2;
+}
+
+
+.sn-casual .casual-right .kuaijie ul li a{
+    display: inline-block;
+    width: 5rem;
+    height: 2.3rem;
+    margin-top: 0.8rem;
+    color: black;
+}
+
+.sn-casual .casual-right .kuaijie ul li a:hover{
+    color: #FF9900;
+}
+
+.sn-casual .casual-right .kuaijie ul li a img{
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-bottom: 0.1rem;
+}
+
+/*中间轮播图*/
+.sn-casual .casual-center .casual-center-div{
+    float: left;
+    width: 83rem;
+    height: 48.2rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sn-casual .casual-center .casual-center-image {
+    width: 332rem;
+    height: 100%;
+}
+
+.sn-casual .casual-center .casual-center-image ul{
+    animation: casualScrolling 8s linear infinite;
+}
+
+.sn-casual .casual-center .casual-center-image ul li{
+    float: left;
+}
+
+@keyframes casualScrolling {
+    20%{transform: translateX(0)}
+    33.3%{transform: translateX(-83rem)}
+    53.3%{transform: translateX(-83rem)}
+    66.6%{transform: translateX(-166rem)}
+    86.6%{transform: translateX(-166rem)}
+    100%{transform: translateX(-249rem)}
+}
+
+.sn-casual .casual-center .casual-footer-ad{
+    width: 81.6rem;
+    height: 122px;
+    position: absolute;
+    left: 0.7rem;
+    bottom: 0.7rem;
+    box-sizing: border-box;
+}
+
+.sn-casual .casual-center .casual-footer-ad ul li{
+    float: left;
+    margin-right: 0.2rem;
+    text-align: center;
+}
+
+.sn-casual .casual-center .casual-footer-ad ul li a{
+    display: inline-block;
+    width: 20.1rem;
+    height: 12.2rem;
+    margin-right: 0.1rem;
+    background-color: white;
+}
+
+.sn-casual .casual-center .casual-footer-ad ul li a div{
+    float: left;
+    width: 10rem;
+    height: 100%;
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    color: #999999;
+    font-size: 1.3rem;
+}
+
+.sn-casual .casual-center .casual-footer-ad ul li a div span{
+    color: #FF6600;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.sn-casual .casual-center .casual-footer-ad ul li:nth-child(2) span{
+    color: mediumpurple;
+}
+
+.sn-casual .casual-center .casual-footer-ad ul li:nth-child(3) span{
+    color: darkgreen;
+}
+
+.sn-casual .casual-center .casual-footer-ad ul li:nth-child(4) span{
+    color: #31b0d5;
+}
+
+.sn-casual .casual-center .casual-footer-ad ul li a img{
+    float: left;
+    width: 8rem;
+    height: 8rem;
+    margin-top: 3rem;
+}
+/*********************轮播中心-结束-***********************/
 
 
 
