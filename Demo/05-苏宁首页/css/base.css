@@ -14,6 +14,7 @@ html{
 body{
     font-size: 1.2rem;
     /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    background-color: rgb(242, 242, 242);
 }
 
 /*清除列表风格*/
