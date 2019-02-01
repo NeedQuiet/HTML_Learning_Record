@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!--函数声明方式-->
+<script type="text/html">
+    // 1.常用声明
+    function log() {
+        console.log(10);
+    }
+    log();
+
+    // 2.函数表达式声明
+    let add = function () {
+        console.log(1 + 3);
+    };
+    add();
+
+    // 3.使用Function构造函数声明
+    let add2 = new Function('console.log(1+4)');
+    add2()
+</script>
+
+<!--
+arguments对象：一个伪数组，包含传入的所有参数，只有length属性，不包含数组的其余属性和方法
+-->
+<script type="text/html">
+    function f() {
+        let value = 0;
+        for (let i=0 ; i< arguments.length; i++){
+            value += arguments[i];
+        }
+        console.log(value);
+        console.log(f.length);//形参的数量
+    }
+
+    f(10,20,30);
+</script>
+
+<!--定时器-->
+<script type="text/html">
+    setInterval(function () {
+        console.log('定时器');
+    },1000);
+</script>
+
+
+<!--回调函数-->
+<script type="text/html">
+    // 总控方法
+    function f(num1,num2,func) {
+        return func(num1,num2);
+    }
+
+    //加减乘除函数
+    function add(a,b) {
+        return a+b;
+    }
+    
+    function sub(a,b) {
+        return a-b;
+    }
+
+    function mul(a,b) {
+        return a*b;
+    }
+
+    function divide(a,b) {
+        return a/b;
+    }
+
+    console.log(f(30, 10, add));
+    console.log(f(30, 10, sub));
+    console.log(f(30, 10, mul));
+    console.log(f(3, 10, divide));
+</script>
+
+
+<!--递归-->
+<script type="text/html">
+    let i =100;
+    function f1() {
+        i--;
+        if (i >= 0) {
+            console.log(i);
+            f1();
+        }
+    }
+    f1();
+</script>
+
+<!--存钱算利息-->
+<script type="text/html">
+    // 每年存入本金n万元
+    let benjin = +(window.prompt('请输入每年存入的本金金额(单位"万")\n将计算整存争取5年，5年后不续存，10年后金额及利息\n利息：\n1年1.78%\n2年2.25%\n3年2.75%'));
+
+    function f(bj) {
+        if (+(bj) === 0){
+            alert('请输入正确的金额');
+        }
+        let arr = [];
+        for (let i = 1; i<= 5; i++){
+            arr.push({'num':i,'benjin':0,'lixi':0,'qixian':0,'lunshu':0})
+        }
+
+        for (let i = 1; i <= 10; i++){
+            let yearS = `<h3>第 ${i} 年</h3>`;
+            window.document.write(yearS);
+
+            let years = `第 ${i} 年`;
+            console.log(years);
+
+            let newArr = [];
+            Object.assign(newArr ,arr);
+
+            //5年内
+            if (i <= 5) {
+                for (let index in arr) {
+                    let dic = arr[index];
+                    if (dic['benjin'] === 0){
+                        // 如果本金为0
+                        if (dic['num'] === i) {
+                            let newDic = {'num': i, 'benjin': bj, 'lixi': 0, 'qixian': 3,'lunshu':parseInt((10-i)/3),'last':((10-i)%3)};
+                            newArr.splice(i-1,1,newDic);
+
+                            let textSet = `存入第${i}笔本金${bj}万元，3年到期`;
+                            window.document.write(textSet);
+                        }
+                    }
+                    else{
+                        // 如果本金不为0
+                        newArr = f1(i,bj,newArr,arr,index);
+                    }
+                }
+                arr =[];
+                Object.assign(arr, newArr);
+                console.log(arr);
+            }
+            else{
+                newArr = f1(i,bj,newArr,arr,0);
+                arr =[];
+                Object.assign(arr, newArr);
+                console.log(arr)
+            }
+        }
+        f2(arr);
+    }
+
+    function f1(i,bj,newArr,arr,ind){
+        for (let index in arr) {
+            let dic = arr[index];
+
+            let qixian  = dic['qixian'];
+
+            //如果没到期，期限时间就减一
+            if (qixian-1 !== 0) {
+                if (i > dic['num']) {
+                    let newDic = {
+                        'num': dic['num'],
+                        'benjin': dic['benjin'],
+                        'lixi': dic['lixi'],
+                        'qixian': dic['qixian'] - 1,
+                        'lunshu':dic['lunshu'],
+                        'last':dic['last']
+                    };
+                    newArr.splice(dic['num'] - 1,1,newDic);
+
+                    let text = `第${dic['num']}笔${bj}万元，还有${newDic['qixian']}年到期<br/>`;
+                    if (+(ind) === 0){
+                        window.document.write(text);
+                    }
+
+                }
+            }
+            else {//如果到期了，就重置期限，并结算利息，重置本金
+                let lirun;
+                switch (dic['last']) {
+                    case 1:
+                        lirun = 0.0178;
+                        break;
+                    case 2:
+                        lirun = 0.0225 * 2;
+                        break;
+                    default:
+                        lirun = 0.0275 * 3;
+                        break;
+                }
+                let lixi = dic['benjin'] * lirun;//此次利息
+                let allLixi = lixi + dic['lixi'];//总利息
+                allLixi = +(allLixi.toFixed(4));//保留4位小数并转为数字（toFiexd返回为字符串）
+                let newBenjin = dic['benjin'] + lixi;
+                newBenjin = +(newBenjin.toFixed(4));
+                let text = `第${dic['num']}笔${bj}万元已到期，利息为:${allLixi}，本金更新为:${newBenjin}<br/>`;
+                if (+(ind) === 0) {
+                    window.document.write(text);
+                }
+                let newDic;
+                if (10 - i === dic['last'] && i !== 10) {//如果是最后一轮3年到期了并且不是第10年，则以dic['last']的年限作为最后续订年限
+                    newDic = {
+                        'num': dic['num'],
+                        'benjin': newBenjin,
+                        'lixi': allLixi,
+                        'qixian': dic['last'],
+                        'lunshu': dic['lunshu'],
+                        'last': 0
+                    };
+                }
+                else {
+                    newDic = {
+                        'num': dic['num'],
+                        'benjin': newBenjin,
+                        'lixi': allLixi,
+                        'qixian': 3,
+                        'lunshu': dic['lunshu'],
+                        'last': dic['last']
+                    };
+                }
+
+                newArr.splice(dic['num'] - 1, 1, newDic);
+            }
+        }
+        return newArr;
+    }
+
+    function f2(arr){
+        let benjin = 0;
+        let lirun = 0;
+        for (let index in arr) {
+            benjin += arr[index]['benjin'];
+            lirun += arr[index]['lixi'];
+        }
+        lirun = +(lirun.toFixed(4));
+        window.document.write(`<h2>计算得出:<h2/><p>10年后，一共可取出${benjin}万元，获利${lirun}万元</p>`)
+
+        let last = 0;
+        let lunshu = 0;
+        let num = 0;
+        for (let index in arr){
+            lunshu = arr[index]['lunshu'];
+            last = 10 - (+(index)) - 1 -lunshu*3;
+            num = +(index) +1;
+            if (last === 0){
+                window.document.write(`<p>第${num}笔钱，于第${num}年存入，存了${lunshu}次（3年定期）<p/>`)
+            }
+            else{
+                window.document.write(`<p>第${num}笔钱，于第${num}年存入，存了${lunshu}次（3年定期），1次（${last}年定期）<p/>`)
+            }
+
+        }
+    }
+
+    f(benjin)
+</script>
+
+<script>
+    //test
+    a = 'asdasd';
+
+    function f() {
+        console.log(a);
+        b= 'ccccc';
+    }
+    f();
+
+</script>
+
+</body>
+</html>

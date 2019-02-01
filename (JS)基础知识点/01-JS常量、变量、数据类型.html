@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script type="text/html">
+    // 定义变量
+    /*
+        var name;
+        var age;
+        var sex;
+    */
+    let name, age, sex;
+    name = '大宁';
+    age = 18;
+    sex = '男';
+    let favorite = 'money';
+    console.log(name ,age ,sex ,favorite);
+
+    let a = b = c = 1;
+    console.log(a, b, c,typeof c);
+
+    let name1 = '李四';
+    console.log(name1)
+    name1 = '张3';
+    console.log(name1)
+
+</script>
+
+<script type="text/html">
+    // typeof 操作符：查看数据类型，并将检查的结果以字符串的形势返回
+    console.log('10的类型为',typeof 10);
+
+    let bool = Boolean(null);
+    console.log(bool) //false
+</script>
+
+<script type="text/html">
+    let str1 = null;
+    let str2 = undefined;
+    console.log('==为值比较', str1 == str2);
+    console.log('===为值比较同时，类型也比较', str1 === str2)
+</script>
+
+<script type="text/html">
+    // 数据类型转换
+    // toString()
+    let num = 123;
+    let str = num.toString();
+    console.log(str, typeof str);
+    // 注：null和undefined没有toString()内置方法
+
+    // String()函数
+    var test;
+    console.log(String(test));//undefined
+
+
+    // Number()
+    /*
+        字符串 转 数字
+        注：
+            1.如果字符串中有非数字字符，则输出NaN
+            2.如果字符串是一个空串或者是一个全是空格的字符串，则准换为0
+    */
+    let num1 = '666';
+    let num2 = Number(num1);
+    console.log(num2,typeof num2);
+    /*
+        其他类型 转 数字
+        1.undefined 转 数字，输出为Nan
+        2.null 转 数字，输出为0
+        3.布尔 转 数字，true 转成 1 ，false 转成 0
+    */
+
+    // paeseInt()函数和parseFloat()函数
+    /*
+        1.Number()函数中无论混合字符串是否存在有效整数都会返回NaN，利用parseInt()/parseFloat()可以提取字符串中的有效整数
+        2.parseInt()和parseFloat()的区别是前者只能提取整数，后者可以提取小数
+        3.parseInt提取字符串中的整数
+            3.1从第一位有效数字开始，知道遇到无效数字；如果第一位不是有效数字，则什么都提取不到，返回NaN
+     */
+    let  str3 = '123.23 asd';
+    console.log(Number(str3));//NaN
+    console.log(parseInt(str3));//123
+    console.log(parseFloat(str3));//123.23
+
+</script>
+
+<script type="text/html">
+    let num = 100;
+    let value = num;
+    num = 90;
+    console.log(num);
+    console.log(value);
+</script>
+
+<script>
+    let num = Math.random();//0~1随机数
+    num *= 3;
+    console.log(num);
+    num = Math.floor(num);//向下取整
+    console.log(num);
+
+    let num1 = window.prompt('请输入数字')
+    alert(num1)
+</script>
+
+</body>
+</html>
