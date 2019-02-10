@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS特效基础知识</title>
+    <script>
+        //页面加载完成后调用
+        window.onload = function () {
+            let btn = document.getElementById('btn');
+            btn.onclick = deal;
+            function deal() {
+                alert('点onload干啥?');
+            }
+        }
+    </script>
+</head>
+<body>
+
+<!--全局变量/方法与window的关系-->
+<script type="text/html">
+    // 所有全局的变量都是window属性(ES6中无效)
+    // ES6中规定：var命令和function命令声明的全局变量，依旧是全局对象的属性，而let和const命令声明的全局变量，不属于全局对象的属性。也就是说，全局对象的属性将与全局变量脱钩。
+    var str = 'test';
+    console.log(window.str);//test
+    let str1 = 'test1';
+    console.log(window.str1);//undefined
+
+    // 所有全局的函数都是window的方法
+    function test() {
+        let test4 = 'test4';
+        console.log(test4);
+    }
+    window.test();
+    window.alert('测试测试测试');
+</script>
+
+<!--获取事件源-->
+<button name="name-btn" id="btn" class="my-btn">点我</button>
+<script type="text/html">
+    let btn1 = document.getElementById('btn');
+    let btn2 = document.getElementsByClassName('my-btn')[0];//getElementsByClassName/getElementsByTagName/getElementsByName获取到的是一个数组
+    let btn3 = document.getElementsByTagName('button')[0];
+    let btn4 = document.getElementsByName('name-btn')[0];
+    let btn5 = document.querySelector('#btn');//全局匹配第一个选择器对应的类
+    let btn6 = document.querySelectorAll('#btn');//匹配所有选择器，返回数组
+
+    console.log(btn1);
+    console.log(btn2);
+    console.log(btn3);
+    console.log(btn4);
+    console.log(btn5);
+    console.log(btn6);
+</script>
+
+<!--绑定函数-->
+<script type="text/html">
+    // 1.获取事件源
+    let btn = document.getElementById('btn');
+    
+    // 函数绑定
+    // 方式一
+    // btn.onclick = function () {
+    //     alert('点我干啥?');
+    // }
+    
+    // 方式二
+    btn.onclick = deal;
+    function deal() {
+        alert('点deal干啥?');
+    }
+</script>
+
+<script>
+
+</script>
+
+</body>
+</html>

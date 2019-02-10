@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // propotype 原型属性:让我们有能力动态给对象添加属性和方法
+
+    // Array.prototype.eat = function (num) {
+    //     console.log(num);
+    // };
+
+    // Array.prototype.run = function (num) {
+    //     console.log(num);
+    // };
+
+
+    function Dog(name) {
+        this._init(name);
+    }
+
+    Dog.prototype = {
+        //加下划线屎为了区分系统的init
+        _init: function (name){
+            this.name =  name;
+        },
+
+        eat:function (num) {
+            console.log(this.name + '在吃' + num);
+        },
+
+        run:function (num) {
+            console.log(this.name + '跑' + num);
+        }
+    };
+
+    let dog = new Dog('小花');
+    let dog1 = new Dog('小黄');
+
+    console.log(dog.name);
+    console.log(Dog.prototype);
+
+
+    dog.eat('屎');
+    dog1.eat('尿');
+    dog.run('丢了');
+    dog1.run('上天了');
+
+    console.log(dog.constructor);
+
+</script>
+</body>
+</html>

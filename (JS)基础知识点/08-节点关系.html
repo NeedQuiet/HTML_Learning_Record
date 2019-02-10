@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点关系</title>
+</head>
+<body>
+    <div id="box" style="width: 400px; height: 400px; background-color: skyblue;">
+        <button class="btn">按钮</button>
+        <span id="span">
+            <a href="#">百度一下</a>
+        </span>
+        <p class="mt">我是MT</p>
+        <div>test</div>
+    </div>
+<!--获取关系节点-->
+<script type="text/html">
+    window.onload = function () {
+        let a = document.getElementsByTagName('a')[0];
+        console.log(a);
+        let parent = a.parentNode.parentNode;
+        console.log(parent);
+    }
+</script>
+
+
+<!--通过腻子盒子设置父盒子的北京颜色-->
+<script type="text/html">
+    window.onload = function () {
+        let btn = document.getElementsByTagName('a')[0];
+        btn.onclick = function () {
+            let span = document.getElementsByTagName('span')[0];
+            let box = span.parentNode;
+            box.style.backgroundColor = 'red';
+            // box.nextElementSibling || box.nextSibling //下一个兄弟节点
+            // box.previousElementSibling || box.previousSibling // 上一个兄弟节点
+        };
+    };
+</script>
+
+<!--获取子节点-->
+<script type="text/html">
+    window.onload = function () {
+        // 1.获取标签
+        let box = document.getElementById('box');
+        // 2.获取所有子节点
+        let allNodeList = box.childNodes;
+        console.log(allNodeList);
+
+        let newList =[];
+        for(let i = 0 ; i < allNodeList.length; i++){
+            let node = allNodeList[i];
+
+            // nodeType === 1 表示的是元素节点，则为标签
+            // nodeType === 2 表示是属性节点
+            // nodeType === 3 是文本节点
+            if (node.nodeType === 1) {
+                newList.push(node);
+            }
+        }
+        console.log(newList);
+    }
+</script>
+
+<!--CRUD（增、删、插入、查）/ 节点复制-->
+<script type="text/html">
+    let box = document.getElementById('box');
+
+    // 1.创建节点
+    let div = document.createElement('div');
+    div.style.backgroundColor = 'green';
+    div.style.width = '150px';
+    div.style.height = '150px';
+
+    // 2.添加节点
+    // box.appendChild(div);//在box的最后追加div
+
+    // 3.插入节点
+    let btn  = document.getElementsByTagName('button')[0];
+    box.insertBefore(div,btn);
+
+    // 4.删除节点
+    let span = document.getElementsByTagName('span')[0];
+    // span.parentNode.removeChild(span);
+    span.remove();
+
+    // 5.拷贝节点
+    let newTag = box.cloneNode(true);//false 浅拷贝、true 深拷贝
+    // 浅拷贝只拷贝第一层，深拷贝会连内容也拷贝了
+    newTag.style.marginTop = '160px';
+    box.appendChild(newTag);
+</script>
+
+<!--节点属性-->
+<script type="text/html">
+    window.onload = function () {
+        let box = document.getElementById('box');
+        // 1.获取：getAttribute(名称)
+        console.log(box.getAttribute('style'));//width: 400px; height: 400px; background-color: skyblue;
+        // console.log(box.style);//CSSStyleDeclaration {0: "width", 1: "height", 2: "background-color", alignContent: "", alignItems: "", alignSelf: "", alignmentBaseline: "", all: "", …}
+
+        // 2.设置: setAttribute（名称，值）
+        box.setAttribute('aaaaa','test');
+        box.setAttribute('bbbb','test1');
+        console.log(box.getAttribute('aaaaa'));//test
+        console.log(box.getAttribute('bbbb'));//test1
+
+        // 3. 删除：removeAttribute(名称)
+        box.removeAttribute('aaaaaa');
+    }
+</script>
+
+<!--querySelector-->
+<script type="text/html">
+    // querySelector将返回匹配到的第一个元素，如果没有，则返回Null；
+    // querySelectorAll 返回一个数组，如没有，则返回数组为空；
+    window.onload = function () {
+        // 根据选择器查找节点
+        let span = document.querySelector('span');
+        console.log(span);
+
+        let divs = document.querySelectorAll('div');
+        console.log(divs);
+
+        let btn = document.querySelector('.btn');
+        console.log(btn);
+    };
+</script>
+
+</body>
+</html>
