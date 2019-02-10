@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选中和取消选中</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style:none;
+        }
+
+        .box{
+            width: 400px;
+            box-shadow: 0 0 10px #000;
+            margin: 100px auto;
+            padding: 20px 20px 0 20px;
+        }
+
+        .box-header{
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        .footer{
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .footer button{
+            margin: 20px 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <section class="box-header">
+            <h2>歌曲排行榜</h2>
+            <hr>
+        </section>
+        <section class="content">
+            <input type="checkbox">1.事件都去哪了<br>
+            <input type="checkbox">2.海阔天空<br>
+            <input type="checkbox">3.真的奈你<br>
+            <input type="checkbox">4.别再犹豫<br>
+            <input type="checkbox">5.哎哟我去<br>
+            <input type="checkbox">6.我滴天哪<br>
+            <input type="checkbox">7.偶买噶<br>
+            <input type="checkbox">8.囧架架<br>
+            <input type="checkbox">9.老Gai<br>
+        </section>
+        <section class="footer">
+            <hr>
+            <button id="allSelect">全选</button>
+            <button id="cancel">取消选中</button>
+            <button id="reverse">反选</button>
+        </section>
+    </div>
+
+    <script>
+        window.onload = function () {
+            // 1.获取所有的复选框
+            // let inputs = document.getElementsByTagName("input");
+            let inputs = document.querySelectorAll("input");
+
+            // 2.全选
+            $('allSelect').onclick = function () {
+                for (let index in inputs) {
+                    // index为string类型
+                    let input = inputs[index];
+                    input.checked = true;
+                }
+            };
+
+            // 3.取消选中
+            $('cancel').onclick = function () {
+                for (let index in inputs) {
+                    let input = inputs[index];
+                    input.checked = false;
+                }
+            };
+
+            // 4.反选
+            $('reverse').onclick = function () {
+                for (let index in inputs) {
+                    let input = inputs[index];
+                    input.checked = !input.checked;
+                }
+
+            };
+
+            function $(id) {
+                return typeof id === 'string' ? document.getElementById(id) : null;
+            }
+        }
+    </script>
+
+</body>
+</html>

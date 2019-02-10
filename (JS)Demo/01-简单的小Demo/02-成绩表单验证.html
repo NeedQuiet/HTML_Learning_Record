@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+    <style>
+        #box{
+            margin: 40px auto;
+            width: 400px;
+            height: 200px;
+        }
+
+        #prompt{
+            font-size: 13px;
+            color: darkgray;
+        }
+
+        #score{
+            border: 1px solid darkgray;
+        }
+
+        .right{
+            color: greenyellow !important;
+        }
+
+        .error{
+            color: red !important;
+        }
+
+        .default{
+            color: darkgray !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <label>成绩</label>
+        <input type="text" id="score" placeholder="请输入分数">
+        <span id="prompt">请输入成绩！</span>
+    </div>
+    <script>
+        window.onload = function () {
+            // 获取输入框焦点
+            $('score').onblur = function () {
+                // 1.获取输入内容
+                let value = parseFloat(this.value);
+
+                // 2.验证
+                if (isNaN(value)) {
+                    dealStyle('输入成绩不正确','error','red');
+                }
+                else if (value >= 0 && value <= 100){//合法的
+                    dealStyle('输入成绩正确','right','darkgray');
+                }
+                else{
+                    dealStyle('成绩必须在0~100之间','error','red');
+                }
+            };
+
+            $('score').onfocus = function () {
+                this.value = '';
+                dealStyle('请输入成绩！','default','darkgray');
+            };
+
+            /**
+             * 处理公共的样式
+             * @param msg
+             * @param className
+             * @param color
+             */
+            function dealStyle(msg, className, color) {
+                $('score').style.borderColor = color;
+                $('prompt').className = className;
+                $('prompt').innerText = msg;
+            }
+        };
+
+        function $(id) {
+            return typeof id === 'string' ? document.getElementById(id) :null;
+        }
+    </script>
+</body>
+</html>
