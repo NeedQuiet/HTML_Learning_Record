@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>取整</title>
+</head>
+<body>
+<script>
+    let num = 10.51;
+    // ceil 向上取整
+    let newNum = Math.ceil(num);
+    document.write(`${num} ; ceil 向上取整，结果为：${newNum}<br/>`);
+
+    // floor 向下取整
+    newNum = Math.floor(num);
+    document.write(`${num} ; floor 向下取整，结果为：${newNum}<br/>`);
+
+    // round 四舍五入
+    newNum = Math.round(num);
+    document.write(`${num} ; round 四舍五入，结果为：${newNum}<br/>`);
+
+    // parseInt() 函数可解析一个字符串，并返回一个整数。
+    newNum = parseInt(num);
+    document.write(`${num} ; parseInt ，结果为：${newNum}<br/>`);
+    num = '21.2awdq2312';
+    newNum = parseInt(num);
+    document.write(`${num} ; parseInt ，结果为：${newNum}<br/>`);
+
+    // parseFloat() 函数可解析一个字符串，并返回一个浮点数。
+    newNum = parseFloat(num);
+    document.write(`${num} ; parseFloat ，结果为：${newNum}<br/>`);
+</script>
+</body>
+</html>

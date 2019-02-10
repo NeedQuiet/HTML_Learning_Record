@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>点我</button>
+<script>
+    // this所在的函数在哪个对象中，this就指向这个对象
+    function func() {
+        console.log('func'+this);//Window
+    }
+    func();
+    console.log(this);//Window
+
+    let btn = document.getElementsByTagName('button')[0];
+    btn.onclick = function () {
+        console.log('btn' + this);//HTMLButtonElement
+    };
+
+</script>
+</body>
+</html>
