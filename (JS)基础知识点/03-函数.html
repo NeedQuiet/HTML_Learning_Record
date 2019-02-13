@@ -261,8 +261,9 @@ arguments对象：一个伪数组，包含传入的所有参数，只有length�
     f(benjin)
 </script>
 
-<script>
-    //test
+<!--test-->
+<script type="text/html">
+
     a = 'asdasd';
 
     function f() {
@@ -271,6 +272,22 @@ arguments对象：一个伪数组，包含传入的所有参数，只有length�
     }
     f();
 
+</script>
+
+<!--构造函数创建对象-->
+<script>
+    function Dog(name,age) {
+        this.name = name;
+        this.age = age;
+
+        this.eat = function (somthing) {
+            console.log(this.name + '在吃' + somthing);
+        }
+    }
+
+    let D = new Dog('Fuck',20);
+    console.log(D.age);
+    D.eat('蛋蛋');
 </script>
 
 </body>
