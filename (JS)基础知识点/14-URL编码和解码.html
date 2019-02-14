@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL编码和解码</title>
+</head>
+<body>
+<script>
+    let str = 'http://www.baidu.com?search=name';
+
+    // 1.编码
+    let encodeStr = encodeURIComponent(str);
+    console.log(encodeStr);//http%3A%2F%2Fwww.baidu.com%3Fsearch%3Dname
+
+    // 2.解码
+    let decodeStr = decodeURIComponent(encodeStr);
+    console.log(decodeStr);//http://www.baidu.com?search=name
+</script>
+</body>
+</html>

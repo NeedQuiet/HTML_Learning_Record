@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组高级API2</title>
+</head>
+<body>
+<script>
+    //1.instanceof
+    // 是一个关键字，判断A是否是B类型
+    let arr = [1,2,'test'];
+    console.log(typeof arr);//Object
+    console.log(arr instanceof Object);//true
+
+    // 2.Array.isArray()
+    // HTML5中新增，判断是不是数组
+    console.log(Array.isArray(arr));//true
+    let name = 'name';
+    console.log(Array.isArray(name));//false
+
+    // 3.toString
+    // 把数组转换为字符串，每一项分割
+    let toString = arr.toString();
+    console.log(toString,typeof toString);//1,2,test string
+
+    // 4.valueOf()
+    // 返回数组对象本身(不知道干啥用的)
+    console.log(arr.valueOf());
+
+    // 5.join()
+    // 将数组转换为字符串，并用参数链接起来
+    let join = arr.join('+');
+    console.log(join,typeof join);//1+2+test string
+
+    // 6. 查找索引。如未找到返回 -1
+    // indexOf(): 从左向右查找
+    // lastIndexOf()：从右向左查找
+    let arr1 = [1,2,33,2,1];
+    console.log(arr1.indexOf(2));// 1
+    console.log(arr1.lastIndexOf(2));// 3
+</script>
+</body>
+</html>

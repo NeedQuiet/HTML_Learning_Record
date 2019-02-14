@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串</title>
+</head>
+<body>
+<script>
+    // 1.如何将Number转换为字符串
+    let num = 20;
+    console.log(typeof (num + ''));
+    console.log(typeof num.toString());
+    console.log(typeof String(num));
+
+    // 2.charAt:根据索引查找对应的字符,一个中文/空格算一个字符，如未找到则为空字符串
+    // charCodeAt:根据索引查找对应字符在Unicode字符集中的的编码值
+    let str = 'Hello World!';
+    let str1 = '你好，中国';
+    console.log(str.charAt(6));//W
+    console.log(str1.charAt(1));//好
+    console.log(str.charCodeAt(0));//72
+
+    // 3.indexOf/lastIndexOf使用方式同数组
+
+    // 4.toUpperCase()/toLowerCase()转换大小写；会影响原字符串
+    console.log(str.toUpperCase());//HELLO WORLD!
+    console.log(str.toLowerCase());//hello world!
+    console.log(str);//hello world!
+
+
+</script>
+</body>
+</html>
