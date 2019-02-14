@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传验证</title>
+</head>
+<body>
+    <label>上传图片的格式验证:</label>
+    <input type="file" id="file">
+    <script>
+        window.onload = function () {
+            // 1.获取input标签
+            let file = document.getElementById('file');
+            // 2.监听作用域的变化
+            file.onchange = function () {
+                // 2.1 获取上传图片的路径
+                let path = this.value;
+                console.log(path);
+
+                // 2.2 截取
+                // 根据'.'的索引去截取字符串
+                let suffix = path.substr(path.lastIndexOf('.'));
+
+                // 2.3 统一转成小写
+                let lower_suffix = suffix.toLowerCase();
+
+                // 2.4 判断
+                if (lower_suffix === '.py') {
+                    alert('上传格式正确');
+                }
+                else{
+                    alert('上传格式错误');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
