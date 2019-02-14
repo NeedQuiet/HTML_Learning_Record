@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>九宫格布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #top{
+            padding: 20px;
+        }
+
+        #bottom{
+            position: relative;
+        }
+
+        .box{
+            width: 220px;
+            height: 360px;
+            margin: 0 15px 15px 0;
+            background-color: #e8e8e8;
+        }
+
+        .box p{
+            font-size: 15px;
+            margin-top: 4px;
+        }
+
+        .box p:last-child{
+            font-size: 13px;
+            color: orange;
+        }
+
+        .box img{
+            display: block;
+            width: 220px;
+            height: 308px;
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="top">
+        <button>显示3列</button>
+        <button>显示4列</button>
+        <button>显示5列</button>
+    </div>
+    <div id="bottom">
+        <div class="box">
+            <img src="" alt="">
+            <p>因为遇见你</p>
+            <p>手牵手一步两步三步四步要上天</p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <p>因为遇见你</p>
+            <p>手牵手一步两步三步四步要上天</p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <p>因为遇见你</p>
+            <p>手牵手一步两步三步四步要上天</p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <p>因为遇见你</p>
+            <p>手牵手一步两步三步四步要上天</p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <p>因为遇见你</p>
+            <p>手牵手一步两步三步四步要上天</p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <p>因为遇见你</p>
+            <p>手牵手一步两步三步四步要上天</p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <p>因为遇见你</p>
+            <p>手牵手一步两步三步四步要上天</p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <p>因为遇见你</p>
+            <p>手牵手一步两步三步四步要上天</p>
+        </div>
+        <div class="box">
+            <img src="" alt="">
+            <p>因为遇见你</p>
+            <p>手牵手一步两步三步四步要上天</p>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            // 1.获取需要的标签
+            let buttons = document.getElementById('top').children;
+            let bottom = document.getElementById('bottom');
+
+            // 2.监听按钮的点击
+
+            for (let j = 0; j < buttons.length; j++) {
+                flex(3+j,buttons[j]);
+            }
+
+            function flex(allCols, button) {
+                // 2.1 定义变量
+                let boxWidth = 220, boxHeight = 360,marginXY = 15;
+                button.onclick = function () {
+                    // 2.2 遍历
+                    for (let i = 0; i < bottom.children.length; i++) {
+                        // 2.2.1 求出当前盒子所在的行和列
+                        let row = parseInt(i / allCols);
+                        let col = parseInt(i % allCols);
+                        // 2.2.2 盒子的定位
+                        let currentBox = bottom.children[i];
+                        currentBox.style.position = 'absolute';
+                        currentBox.style.left = col * (boxWidth + marginXY) + 'px';
+                        currentBox.style.top = row * (boxHeight + marginXY) + 'px';
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
