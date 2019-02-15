@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时钟</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style:none;
+        }
+
+        #box{
+            width: 683px;
+            height: 683px;
+            margin: 10px auto;
+            background: url("images/biaopan.png") no-repeat;
+
+            position: relative;
+        }
+
+        #hour,#second,#min{
+            width: 49px;
+            height: 683px;
+            position: absolute;
+            top: 0;
+        }
+
+        #hour{
+            background: url("images/shi.png") no-repeat center center;
+            left: 47%;
+        }
+
+        #min{
+            background: url("images/fen.png") no-repeat center center;
+            left: 47.5%;
+        }
+
+        #second{
+            background: url("images/miao.png") no-repeat center center;
+            left: 48%;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="hour"></div>
+    <div id="min"></div>
+    <div id="second"></div>
+</div>
+<script>
+    window.onload = function () {
+        // 1.获取需要的标签
+        let hour = document.getElementById('hour');
+        let min = document.getElementById('min');
+        let sec = document.getElementById('second');
+
+        // 2.开启定时器
+        setInterval(function () {
+            // 2.1 获取当前的时间戳
+            let date = new Date();
+
+            // 2.2 求出总毫秒数
+            let millS = date.getMilliseconds();
+            let s = date.getSeconds() + millS / 1000;
+            let m = date.getMinutes() + s/60;
+            let h = date.getHours() % 12 + m/60;
+
+            // 2.3 旋转
+            hour.style.transform = 'rotate('+h*30+'deg)';
+            min.style.transform = 'rotate('+m*6+'deg)';
+            sec.style.transform = 'rotate('+s*6+'deg)';
+        },10);
+
+
+    }
+</script>
+</body>
+</html>

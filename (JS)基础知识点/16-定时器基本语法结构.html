@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        #time{
+            font-size :40px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<!--基本语法结构-->
+<script>
+    window.setInterval("console.log('执行的代码串');",1000);
+
+    function run(){
+        console.log('哈哈哈');
+    }
+    setInterval(run,1000);
+
+    setInterval(function () {
+        console.log('呵呵');
+    },2000);
+
+    setTimeout(function () {
+        console.log('3s后下班');
+    },3000);
+</script>
+
+<!--设置和清除定时器-->
+<button id="btn1">开启定时器</button>
+<button id="btn2">关闭定时器</button>
+<script>
+    window.onload = function () {
+        // 1.获取需要的标签
+        let btn1 = document.getElementById('btn1');
+        let btn2 = document.getElementById('btn2');
+
+        let height = 150 , timer = null;
+        // 2.开启定时器
+        btn1.onclick = function () {
+            timer = setInterval(function () {
+                height += 1;
+                console.log('身高是' + height + 'cm');
+            },500);
+        };
+
+        // 3.结束定时器
+        btn2.onclick = function () {
+            clearInterval(timer);
+        }
+    }
+</script>
+
+<!--放假倒计时-->
+<h1>倒计时与上面的按钮无关</h1>
+<div id="time"></div>
+<script>
+    window.onload = function () {
+        // 1.获取需要的标签
+        let time = document.getElementById('time');
+
+        // 2.自定义将来的时间
+        let  nextDate = new Date('2020/1/25 00:00:00');
+
+        // 3.开启定时器
+        setInterval(function () {
+            // 4.获取现在的时间
+            let currentDate = new Date();
+
+            // 5.获取时间戳
+            let currentTime = currentDate.getTime();
+            let nextTime = nextDate.getTime();
+
+            // 6.计算剩下的时间戳
+            let allTime = nextTime - currentTime;
+
+            // 7.计算时间
+            let second = parseInt(allTime / 1000);
+
+            let day = size(parseInt(second/3600/24));
+            let hour = size(parseInt(second/3600%24));
+            let minute = size(parseInt(second/60%60));
+            let sec = size(parseInt(second % 60));
+
+            let string = `距离2020年过年，还有${day}天${hour}小时${minute}分钟${sec}秒`;
+
+            let div = document.getElementById('time');
+            div.innerText = string;
+        },1000);
+
+        function size(num) {
+            return num >=10? num:'0'+num;
+        }
+
+    };
+</script>
+
+</body>
+</html>

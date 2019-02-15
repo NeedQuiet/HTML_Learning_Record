@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器轮播效果</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        #box{
+            width: 322px;
+            height: 250px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+        }
+
+        #box .center .color{
+            width: 200px;
+            height: 250px;
+        }
+
+        .left,
+        .right{
+            width: 60px;
+            height: 250px;
+            float: left;
+        }
+
+        .center{
+            width: 200px;
+            height: 250px;
+            float: left;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        li{
+            line-height: 27px;
+            text-align: center;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .current{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul class="left">
+            <!--<li><a href="#">颜色1</a></li>-->
+        </ul>
+        <div class="center">
+            <!--<a href="#"><div class="color"></div></a>-->
+        </div>
+        <ul class="right">
+            <!--<li><a href="#">颜色10</a></li>-->
+        </ul>
+    </div>
+    <script>
+        window.onload = function () {
+            let current = 0;
+            for (let i = 0; i < 18; i++) {
+                if (i < 9) {
+                    // left
+                    let li = document.createElement('li');
+                    li.innerHTML = `<a href="#">颜色${i+1}</a>`;
+                    if (i === current) {
+                        li.className = 'current';
+                    }
+
+                    let leftUl = document.getElementsByClassName('left')[0];
+                    leftUl.appendChild(li);
+                }
+                else{
+                    // right
+                    let li = document.createElement('li');
+                    li.innerHTML = `<a href="#">颜色${i+1}</a>`;
+                    if (i === current) {
+                        li.className = 'current';
+                    }
+
+                    let leftUl = document.getElementsByClassName('right')[0];
+                    leftUl.appendChild(li);
+                }
+
+                // center
+                let a = document.createElement('a');
+                a.innerHTML = '<div class="color"></div>';
+                a.href = '#';
+                a.index = i;
+
+                let center = document.getElementsByClassName('center')[0];
+                center.appendChild(a);
+
+                let div = document.getElementsByClassName('color')[i];
+                let color = 'rgb('+ (i+20)*5 +','+ (20-i)*10 +','+ (30 - i)*5 + ')';
+                div.style.backgroundColor= color;
+
+            }
+
+            let allLis = document.getElementsByTagName("li");
+            let allImage = document.getElementsByClassName('center')[0].children;
+
+            // 索引
+            let loop = 0;
+
+            // 定时器
+            setInterval(function () {
+                // 排他
+                for (let i = 0; i < 18; i++) {
+                    allLis[i].className = '';
+                    allImage[i].style.display = 'none';
+                }
+
+                // 自己选中
+                allLis[loop].className = 'current';
+                allImage[loop].style.display = 'block';
+
+                loop += 1;
+
+                if (loop === 18) {
+                    loop = 0;
+                }
+            },1000)
+
+        };
+
+        function $(id) {
+            return typeof id === 'string' ? document.getElementById(id) : null;
+        }
+    </script>
+</body>
+</html>
