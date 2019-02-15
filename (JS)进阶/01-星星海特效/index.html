@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body{
+            background-color: #000;
+        }
+
+        span{
+            width: 25px;
+            height: 25px;
+            background: url("images/star.png") no-repeat;
+            position: absolute;
+            background-size:100% 100% ;
+            animation: flash 1s alternate infinite;//反复轮询的效果
+        }
+
+        @keyframes flash {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        span:hover{
+            transform: scale(2,2) rotate(180deg) !important;
+            transition: all 0.5s linear;
+        }
+
+    </style>
+</head>
+<body>
+    <!--<span></span>-->
+
+    <script>
+        window.onload = function () {
+            // 1 求出屏幕的尺寸
+            let screenW = document.documentElement.clientWidth;
+            let screenH = document.documentElement.clientHeight;
+
+            // 2 动态创建星星
+            for (let i = 0; i < 150; i++) {
+                // 2.1 创建星星
+                let span = document.createElement('span');
+                document.body.appendChild(span);
+
+                // 2.2 随机坐标
+                let originX = parseInt(Math.random() * screenW);// 0~screenW
+                let originY = parseInt(Math.random() * screenH);// 0~screenH
+
+                span.style.left = originX + 'px';
+                span.style.top = originY + 'px';
+
+                // 2.3 随机缩放 0~1.5倍
+                let scale = Math.random() * 1.5;// 0~1.5
+                span.style.transform = 'scale(' + scale + ',' + scale + ')'
+
+                // 2.4 随机频率 闪烁动画延迟0~1.5s
+                let rate = Math.random() * 1.5;// 0~1.5
+                span.style.animationDelay = rate + 's';
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="js/underscore.js"></script>
+<script>
+    let dataArr = ['asda','wewqe','wwww',123];
+
+    // 遍历
+    _.each(dataArr,function (item, index, arr) {
+        console.log(item, index, arr);
+    });
+
+    // 删除
+    console.log(_.without(dataArr, 'asda', 123));
+
+    // 取随机数
+    console.log(_.random(-9, 5));
+</script>
+</body>
+</html>
