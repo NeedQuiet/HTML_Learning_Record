@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html, body, ul{
+            width: 100%;
+            height: 100%;
+        }
+
+        #ps{
+            position: relative;
+
+        }
+
+        #ps li{
+            box-shadow: 0 0 10px #000;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            transition: all linear 0.5s;
+        }
+
+        #ps li img {
+            width: 300px;
+            height: 300px;
+        }
+
+        #ps li.current{
+            left: 50% !important;
+            top: 50% !important;
+            transform: rotate(0deg) translate(-50%,-50%) scale(1.5,1.5) !important;
+            z-index: 99;
+        }
+
+    </style>
+</head>
+<body>
+    <ul id="ps"></ul>
+    <script src="js/underscore.js"></script>
+    <script>
+        window.onload = function () {
+            // 1 获取需要的标签
+            let ps = document.getElementById('ps');
+
+            // 2 动态创建li标签
+            for (let i = 0; i < 10; i++) {
+                // 2.1 创建li标签
+                let li = document.createElement('li');
+                ps.appendChild(li);
+
+                // 2.2 创建img标签
+                let img = document.createElement('img');
+                img.src = `images/list-00${i%5+1}.jpg`;
+                li.appendChild(img);
+            }
+            // 3 获取所有的li
+            let allLi = ps.children;
+
+            // 4 求出屏幕宽度和高度
+            let screenW = document.documentElement.clientWidth-300;
+            let screenH = document.documentElement.clientHeight-300;
+            console.log(screenW, screenH);
+
+            // 5 遍历
+            for (let j = 0; j < allLi.length; j++) {
+                // 5.1 获取单个li
+                let li = allLi[j];
+
+                // 5.2 随机分布
+                li.style.left = _.random(0, screenW) + 'px';
+                li.style.top = _.random(0, screenH) + 'px';
+
+                // 5.3 随机角度
+                li.style.transform = `rotate(${_.random(0,360)}deg)`;
+
+                // 5.4 监听点击事件
+                li.onclick = function () {
+                    for (let k = 0; k < allLi.length; k++) {
+                        allLi[k].className = '';
+                    }
+                    this.className = 'current';
+                };
+            }
+        }
+    </script>
+</body>
+</html>
