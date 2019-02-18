@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 0;
+        }
+
+        body{
+            background-color: pink;
+        }
+
+        #nav{
+            width: 1000px;
+            height: 63px;
+            background: url("images/logo.png") no-repeat right center #fff;
+            border-radius: 5px;
+            position: relative;
+            margin: 100px auto;
+        }
+
+        #nav ul{
+            position: relative;
+        }
+
+        #nav ul li{
+            float: left;
+            width: 88px;
+            height: 63px;
+            text-align: center;
+            line-height: 63px;
+            cursor: pointer;
+        }
+
+        #t_mao{
+            width: 88px;
+            height: 63px;
+            background: url("images/tmao.png") no-repeat center center;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <span id="t_mao"></span>
+        <ul>
+            <li>双11狂欢</li>
+            <li>服装会场</li>
+            <li>数码家电</li>
+            <li>家具建材</li>
+            <li>母婴童装</li>
+            <li>手机会场</li>
+            <li>美妆会场</li>
+            <li>进口会场</li>
+            <li>飞猪旅行</li>
+        </ul>
+    </nav>
+
+    <script>
+        window.onload = function () {
+            // 1 获取需要的标签
+            let nav = $('nav');
+            let t_mao = $('t_mao');
+            let ul = nav.children[1];
+            let allLis = ul.children;
+
+            let beginX = 0;
+
+            // 2 遍历
+            for (let i = 0; i < allLis.length; i++) {
+                let li = allLis[i];
+
+                // 3 监听鼠标进入
+                li.onmouseover = function () {
+                    end = this.offsetLeft;
+
+                };
+
+                // 4 监听鼠标按下
+                li.onmousedown = function () {
+                    beginX = this.offsetLeft;
+                };
+
+                // 5 监听鼠标离开
+                li.onmouseout = function () {
+                    end = beginX;
+                };
+            }
+
+            // 缓动动画
+            let begin = 0, end = 0;
+            setInterval(function () {
+                begin = begin + (end - begin) * 0.1;
+                t_mao.style.left = begin + 'px';
+            },10);
+
+            function $(id) {
+                return typeof id === 'string' ? document.getElementById(id) : null;
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

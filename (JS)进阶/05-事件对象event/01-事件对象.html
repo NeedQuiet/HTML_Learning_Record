@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件对象</title>
+</head>
+<body>
+<button id="btn">点我</button>
+<script>
+    window.onload = function () {
+        let btn = document.getElementById('btn');
+        btn.onclick = function (event) {
+            let e = event || window.event;
+            console.log(e.type);
+        }
+    }
+</script>
+</body>
+</html>

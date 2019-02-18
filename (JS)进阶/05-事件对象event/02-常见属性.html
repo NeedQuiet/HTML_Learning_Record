@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常见属性</title>
+</head>
+<body>
+<script>
+    document.onclick = function (event) {
+        let e = event || window.event;
+
+        // screenX/Y 是以屏幕为基准进行测量，即：当前元素距离屏幕的尺寸
+        console.log('screen  '+e.screenX + ',' + e.screenY);
+
+        // pageX/Y 是以当前文档（绝对定位）为基准，不适用于IE6-8；
+        console.log('page  '+e.pageX + ',' + e.pageY);
+
+        // clientX/Y 是以当前可视区域为基准，类似于固定定位
+        console.log('client  '+e.clientX + ',' + e.clientY);
+    }
+</script>
+</body>
+</html>

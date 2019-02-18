@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>进度条</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: none;
+        }
+
+        #progress{
+            width: 1000px;
+            height: 35px;
+            line-height: 35px;
+            margin: 100px auto;
+
+            position: relative;
+        }
+
+        #progress-bar{
+            width: 900px;
+            height: 100%;
+            background-color: #ccc;
+            border-radius: 8px;
+            position: relative;
+        }
+
+
+        #progress-value{
+            position: absolute;
+            right: 30px;
+            top: 0;
+        }
+
+        #progress-bar-fg{
+            width: 0;
+            height: 100%;
+            background-color: orangered;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        span{
+            width: 25px;
+            height: 50px;
+            background-color: orangered;
+            position: absolute;
+            left: 0;
+            top: -7.5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="progress">
+        <div id="progress-bar">
+            <div id="progress-bar-fg"></div>
+            <span></span>
+        </div>
+        <div id="progress-value">0%</div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            // 获取需要的标签
+            let progress = document.getElementById('progress');
+            let progress_bar = progress.children[0];
+            let progress_value = progress.children[1];
+            let progress_bar_fg = progress_bar.children[0];
+            let bar = progress_bar.children[1];
+
+            // 监听鼠标按下
+            bar.onmousedown = function (event) {
+                let e = event || window.event;
+
+                // 获取初始位置
+                let offserLeft = e.clientX - bar.offsetLeft;
+
+                // 监听鼠标移动
+                document.onmousemove = function (event) {
+                    let e1 = event || window.event;
+
+                    // 获取移动的位置
+                    let x = e1.clientX - offserLeft;
+
+                    let max = progress_bar.offsetWidth - bar.offsetWidth;
+                    x = x < 0 ? 0 : x;
+                    x = x > max? max:x;
+
+                    // 走起来
+                    bar.style.left = x + 'px';
+                    progress_bar_fg.style.width = x + 'px';
+
+                    let precent = parseInt(x / max * 100);
+                    progress_value.innerText = `${precent}%`;
+
+                    return false;//为了防止按下和抬起的手势冲突（暂时未遇到）
+                };
+
+                // 监听鼠标抬起
+                document.onmouseup = function () {
+                     document.onmousemove = null;
+                }
+
+            };
+
+
+
+
+        }
+    </script>
+
+</body>
+</html>

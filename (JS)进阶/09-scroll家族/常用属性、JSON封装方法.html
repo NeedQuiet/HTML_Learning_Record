@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用属性</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+    </style>
+</head>
+<body>
+<script type="text/html">
+    // 常用属性 scrollLeft 和 scrollTop
+    window.onscroll = function () {
+        let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft;
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        console.log(scrollLeft, scrollTop);
+    }
+</script>
+
+//通过JSON封装scrollLeft、scrollTop
+<script>
+    /**
+     * 获取滚动的头部距离和左边距离
+     * @returns {{top: number, left: number}}
+     */
+    function scroll() {
+        if (window.pageYOffset !== null) {
+            return{
+                top:window.pageYOffset,
+                left:window.pageXOffset
+            }
+        }else if (document.compatMode === 'CSS1Compat') { // W3C 标准模式
+            return {
+                top: document.documentElement.scrollTop,
+                left: document.documentElement.scrollLeft
+            }
+        }
+
+        return{
+            top: document.body.scrollTop,
+            left: document.body.scrollLeft
+        }
+    }
+
+    window.onscroll = function () {
+        console.log(scroll().top);
+    }
+
+</script>
+
+</body>
+</html>

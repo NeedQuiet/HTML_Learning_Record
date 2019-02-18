@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>放大镜</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        img{
+            vertical-align: top;//消除图片间的间隔
+        }
+
+        #box{
+            width: 350px;
+            height: 350px;
+            margin: 100px 0 0 100px;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+
+        #small{
+            position: relative;
+        }
+
+        #small img{
+            width: 350px;
+            height: 350px;
+        }
+
+        #big{
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            left: 400px;
+            top: 0;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            display: none;
+        }
+
+        #bigImage{
+            width: 720px;
+            height: 720px;
+            background: url("images/top-ad-list-001.jpg") no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        #list{
+            margin-top: 5px;
+            margin-left: 100px;
+        }
+
+        #list img{
+            width: 70px;
+            height: 70px;
+        }
+
+        #mask{
+            display: none;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 0, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: move;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="small">
+            <img src="images/top-ad-list-001.jpg" alt="">
+            <span id="mask"></span>
+        </div>
+        <div id="big">
+            <div id="bigImage"></div>
+        </div>
+    </div>
+    <div id="list">
+        <img src="images/top-ad-list-001.jpg" alt="">
+        <img src="images/top-ad-list-002.jpg" alt="">
+        <img src="images/top-ad-list-003.jpg" alt="">
+        <img src="images/top-ad-list-004.jpg" alt="">
+        <img src="images/top-ad-list-005.jpg" alt="">
+    </div>
+
+    <script>
+        window.onload = function () {
+            // 获取需要的标签
+            let box = document.getElementById('box');
+            let smallBox  = box.children[0];
+            let bigBox = box.children[1];
+            let smallImg = smallBox.children[0];
+            let mask = smallBox.children[1];
+            let bigImg = document.getElementById('bigImage');
+            let listImgs = document.getElementById('list').children;
+
+            // 监听鼠标进入小盒子
+            smallBox.onmouseover = function () {
+                mask.style.display = 'block';
+                bigBox.style.display = 'block';
+
+                //监听鼠标的移动
+                smallBox.onmousemove = function (event) {
+                    let e = event || window.event;
+                    // 求出鼠标的坐标
+                    let left = event.clientX - box.offsetLeft - mask.offsetWidth * 0.5;
+                    let top = event.clientY - box.offsetTop - mask.offsetHeight * 0.5;
+
+                    // 边界检测
+                    let maxLeft = box.offsetWidth - mask.offsetWidth;
+                    left = left < 0 ? 0 : left;
+                    left = left > maxLeft ? maxLeft : left;
+
+                    let maxTop = box.offsetHeight - mask.offsetHeight;
+                    top = top < 0 ? 0 : top;
+                    top = top > maxTop ? maxTop : top;
+
+                    // 移动mask
+                    mask.style.left = left + 'px';
+                    mask.style.top = top + 'px';
+
+                    // 大图移动起来
+                    /*
+                        smallX / bixX = small.Width / big.Width
+                        bixX = smallX / (small.Width / big.Width)
+                     */
+
+                    bigImg.style.left = - left / (smallBox.offsetWidth / bigBox.offsetWidth) + 'px';
+                    bigImg.style.top = - top / (smallBox.offsetHeight / bigBox.offsetHeight) + 'px';
+                }
+            };
+
+            // 鼠标离开小盒子
+            smallBox.onmouseout = function () {
+                mask.style.display = 'none';
+                bigBox.style.display = 'none';
+            };
+
+            for (let i = 0;i<listImgs.length;i++){
+                let img = listImgs[i];
+                let iamge = img.src;
+
+                img.onclick = function () {
+                    console.log(this.src);
+                    smallImg.src = this.src;
+                    bigImg.style.background = `url("${this.src}") no-repeat`;
+                    bigImg.style.backgroundSize = 'cover';
+                };
+            }
+
+        }
+    </script>
+
+</body>
+</html>

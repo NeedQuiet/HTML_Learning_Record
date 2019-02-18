@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>横向进度条</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: none;
+            list-style: none;
+        }
+
+        #box{
+            width: 750px;
+            height: 200px;
+            margin: 100px auto;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #box-top{
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+
+        #box-top li{
+            float: left;
+        }
+
+        #box-top li img{
+            width: 150px;
+            height: 150px;
+        }
+
+        #box-bottom{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: #e8e8e8;
+            width: 100%;
+            height: 25px;
+        }
+
+        .mask{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 25px;
+            border-radius: 10px;
+            background-color: orangered;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul id="box-top">
+            <!--<li><img src="" alt=""></li>-->
+        </ul>
+        <div id="box-bottom">
+            <span class="mask"></span>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            let ul = document.getElementById('box-top');
+
+            // 循环创建商品
+            let num = 15;
+            for (let i = 0; i < num; i++) {
+                let src = `images/top-ad-list-00${i%5 + 1}.jpg"`;
+                let li = document.createElement('li');
+                li.innerHTML = `<img src="${src}" alt="">`;
+                ul.appendChild(li);
+            }
+            let contentW = num * 150;
+            ul.style.width =`${contentW}px`;
+
+            // 获取需要的标签
+            let box = document.getElementById('box');
+            let bottom = document.getElementById('box-bottom');
+            let mask = bottom.children[0];
+
+            // 设置滚动条长度
+            // 滚动条长度 = （盒子的宽度 / 内容的宽度）* 盒子的宽度
+            let mask_len = box.offsetWidth / contentW * box.offsetWidth;
+            mask.style.width = mask_len + 'px';
+
+            // 监控鼠标按下
+            mask.onmousedown = function (event) {
+                let e = event || window.event;
+
+                // 获取初始值
+                let benginX = e.clientX - mask.offsetLeft;
+
+                // 移动
+                document.onmousemove = function (event) {
+                    let e = event || window.event;
+
+                    // 求出移动的距离
+                    let endX = event.clientX - benginX;
+
+                    // 计算边界
+                    let max = box.offsetWidth - mask.offsetWidth;
+                    endX = endX < 0 ? 0 : endX;
+                    endX = endX > max ? max : endX;
+
+                    // 动起来
+                    mask.style.left = endX + 'px';
+                    let ulMove = ul.offsetWidth / bottom.offsetWidth * endX;
+                    ul.style.left = - ulMove + 'px';
+
+                    return false;
+                };
+
+                document.onmouseup = function () {
+                    document.onmousemove = null;
+                }
+            };
+        }
+    </script>
+</body>
+</html>
