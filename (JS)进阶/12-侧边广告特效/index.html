@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>侧边广告</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: none;
+        }
+
+        body{
+            text-align: center;
+            position: relative;
+        }
+
+        #AD{
+            width: 150px;
+            position: absolute;
+            left: 0;
+            top: 250px;
+        }
+
+        #AD img{
+            width: 100%;
+        }
+
+        p{
+            height: 50px;
+        }
+
+        #close{
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="AD">
+        <img src="images/Test.jpeg" alt="">
+        <span id="close"></span>
+    </div>
+
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+            // 创建假数据
+            let num = 100;
+            for (let i = 0; i < num; i++) {
+                let p = document.createElement('p');
+                p.innerText = '华丽的-------------分割占位线';
+                document.body.appendChild(p);
+            }
+
+            // 获取广告头部的高度
+            let offset_top = $('AD').offsetTop;
+
+            // 监听窗口滚动
+            let begin = 0, end = 0, timer = null;
+            window.onscroll = function () {
+                // 先清后设
+                clearInterval(timer);
+
+                // 获取滚动高度
+                let scroll_top = scroll().top;
+                end = offset_top + scroll_top;
+
+                //缓动动画
+                timer = setInterval(function () {
+                    begin += (end - begin) * 0.2;
+                    $('AD').style.top = begin + 'px';
+                    
+                    // 清除定时器
+                    if (Math.round(begin) === end) {
+                        clearInterval(timer);
+                    }
+                },20)
+            }
+
+            // 关闭广告点击
+            $('close').onclick = function () {
+                $('AD').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

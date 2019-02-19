@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941d7b77-8d51-4766-a68d-67f78977ba61" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/10-瀑布流/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/10-瀑布流/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/myFunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/11-中部导航吸顶/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/11-中部导航吸顶/js/myFunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/12-侧边广告特效/images/Test.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/12-侧边广告特效/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/12-侧边广告特效/js/myFunc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,12 +22,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/index.html">
+        <entry file="file://$PROJECT_DIR$/(JS)进阶/12-侧边广告特效/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="450">
+              <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.jpeg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/(JS)进阶/12-侧边广告特效/images/Test.jpeg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -34,9 +40,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -87,9 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/基础知识点/20-FlexDemo(手机百度测试).html" />
-        <option value="$PROJECT_DIR$/基础知识点/21-圣杯布局.html" />
-        <option value="$PROJECT_DIR$/基础知识点/22-双飞翼布局.html" />
         <option value="$PROJECT_DIR$/基础知识点/23-2D变形-移动.html" />
         <option value="$PROJECT_DIR$/基础知识点/24-2D变形-缩放.html" />
         <option value="$PROJECT_DIR$/基础知识点/25-2D变形-旋转(rotate).html" />
@@ -138,6 +141,9 @@
         <option value="$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/myFunc.js" />
         <option value="$PROJECT_DIR$/(JS)进阶/10-瀑布流/index.html" />
         <option value="$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/index.js" />
+        <option value="$PROJECT_DIR$/(JS)进阶/11-中部导航吸顶/js/myFunc.js" />
+        <option value="$PROJECT_DIR$/(JS)进阶/11-中部导航吸顶/index.html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/12-侧边广告特效/index.html" />
       </list>
     </option>
   </component>
@@ -151,7 +157,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="365" />
+    <option name="x" value="960" />
     <option name="y" value="23" />
     <option name="width" value="1455" />
     <option name="height" value="1014" />
@@ -174,51 +180,20 @@
             <path>
               <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
               <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
-              <item name="(JS)Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
-              <item name="(JS)Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="02-Tab选项卡" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
-              <item name="(JS)Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="02-Tab选项卡" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
               <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
               <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
               <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
-              <item name="09-scroll家族" type="462c0819:PsiDirectoryNode" />
+              <item name="12-侧边广告特效" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
               <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
               <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
-              <item name="10-瀑布流" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
-              <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
-              <item name="10-瀑布流" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
-              <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
-              <item name="10-瀑布流" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="12-侧边广告特效" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -236,19 +211,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/(JS)进阶/08-商品展示(横向进度条)特效" />
-      <recent name="$PROJECT_DIR$/(JS)进阶/06-放大镜特效/images" />
-      <recent name="$PROJECT_DIR$/(JS)进阶/03-照片墙特效/images" />
-      <recent name="$PROJECT_DIR$/(JS)进阶/03-照片墙特效" />
-      <recent name="$PROJECT_DIR$/基础知识点/Image" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/(JS)进阶/04-天猫弹性导航/images" />
       <recent name="$PROJECT_DIR$/(JS)进阶/02-JS常用函数库/js" />
       <recent name="$PROJECT_DIR$/(JS)进阶/01-星星海特效/images" />
       <recent name="$PROJECT_DIR$/(JS)Demo/03-时钟/images" />
       <recent name="$PROJECT_DIR$/Demo/05-苏宁首页/images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/(JS)进阶/12-侧边广告特效/images" />
+      <recent name="$PROJECT_DIR$/(JS)进阶/12-侧边广告特效" />
+      <recent name="$PROJECT_DIR$/(JS)进阶/11-中部导航吸顶/js" />
+      <recent name="$PROJECT_DIR$/(JS)进阶/08-商品展示(横向进度条)特效" />
+      <recent name="$PROJECT_DIR$/(JS)进阶/06-放大镜特效/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -299,15 +274,15 @@
       <workItem from="1550195438950" duration="9130000" />
       <workItem from="1550229812346" duration="2196000" />
       <workItem from="1550453051523" duration="21297000" />
-      <workItem from="1550540458625" duration="3978000" />
+      <workItem from="1550540458625" duration="6335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284363000" />
+    <option name="totallyTimeSpent" value="286720000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="365" y="23" width="1455" height="1014" extended-state="0" />
+    <frame x="960" y="23" width="1455" height="1014" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.195189" />
@@ -341,44 +316,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(HTML+CSS)基础知识点/08-浮动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(HTML+CSS)基础知识点/20-FlexDemo(手机百度测试).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(HTML+CSS)基础知识点/25-2D变形-旋转(rotate).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/(HTML+CSS)基础知识点/26-2D变形-倾斜(skew).html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -685,20 +622,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/11-中部导航吸顶/js/myFunc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="25" column="100" lean-forward="true" selection-start-line="25" selection-start-column="100" selection-end-line="25" selection-end-column="100" />
+        <state relative-caret-position="773">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/index.html">
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/12-侧边广告特效/js/myFunc.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/11-中部导航吸顶/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="90">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/12-侧边广告特效/images/Test.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/12-侧边广告特效/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
         </state>
       </provider>
     </entry>
