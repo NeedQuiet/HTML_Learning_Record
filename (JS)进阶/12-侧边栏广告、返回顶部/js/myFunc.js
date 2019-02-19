@@ -29,3 +29,11 @@ function scroll() {
 function $(id) {
     return typeof id === 'string' ? document.getElementById(id):null;
 }
+
+function show(obj) {
+    return obj.style.display = 'block';
+}
+
+function hide(obj) {
+    return obj.style.display = 'none';
+}
