@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选中、分享</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        p{
+            width: 300px;
+            display: block;
+            margin: 100px auto;
+        }
+
+        #share_text{
+            background-color: skyblue;
+            width: 250px;
+            color: white;
+            position: absolute;
+            display: none;
+        }
+
+        #share{
+            width: 26px;
+            height: 26px;
+            background: url("iamges/weibo.png") no-repeat;
+            background-size: cover;
+            position: absolute;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="word">但随着游戏产业的发展，独立游戏制作和商业游戏制作之间的界限正在变得越来越模糊，尤其是在大量发行公司的介入下，以往只有大厂才能操作的全球同步发行和多人联机模式，也在逐步成为独立游戏的标配。 在路上 iOS独立游戏的全球同步发行 众所周知，App Store一直有在为提升独立游戏的曝光度努力，2年前其就增设了独立游戏永久专区，并且随着全新商店界面的推出，新栏目“今日推荐”更是基本成为了独立游戏的自留地，大大增加了独立游戏的曝光量，让其能第一时间被用户发现。</p>
+    <div id="share_text"></div>
+    <div id="share"></div>
+
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+            // 监听鼠标抬起
+            $('word').onmouseup = function (event) {
+                // 兼容
+                let e = event || window.event;
+
+                let selectedText;
+                if (window.getSelection) { // 标准模式
+                    selectedText = window.getSelection().toString();
+                }else{ // IE 系列
+                    selectedText = document.selection.createRange().text;
+                }
+
+                // 判断
+                if (selectedText.length > 0) {
+                    // 显示面板
+                    $('share_text').innerText = selectedText;
+                    $('share_text').style.display = 'block';
+                    $('share').style.display = 'block';
+
+                    // 改变位置
+                    $('share_text').style.left = e.clientX + 'px';
+                    $('share_text').style.top = e.clientY + 'px';
+                    $('share').style.left = e.clientX + 250 + 'px';
+                    $('share').style.top = e.clientY - 8 + 'px';
+                }
+            };
+
+            // 监听文档的点击
+            document.onmousedown = function (event) {
+                // 兼容
+                let e = event || window.event;
+                // 获取点击区域的ID
+                let targetID = e.target ? e.target.id : e.srcElement.id;
+                if (targetID !== 'share_text' && targetID !== 'share') {
+                    $('share_text').style.display = 'none';
+                    $('share').style.display = 'none';
+                }else if (targetID === 'share'){
+                    window.location.href = 'http://www.baidu.com'
+                }
+
+                // 防止拖动时选中内容
+                window.getSelection() ? window.getSelection().removeAllRanges() : document.selection.empty();
+            }
+        }
+    </script>
+</body>
+</html>

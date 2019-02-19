@@ -7,15 +7,29 @@ window.onload = function () {
    waterFull('main','box');
 
    // 动态加载图片
+   let timer1 = null;//节流
    window.onscroll = function () {
-       if (checkWillLoadImage()) {
-           // 造数据
-           createItems(20);
+       clearTimeout(timer1);
+       timer1 = setTimeout(function () {
+           if (checkWillLoadImage()) {
+               // 造数据
+               createItems(20);
 
-           // 实现瀑布流布局
+               // 实现瀑布流布局
+               waterFull('main','box');
+           }
+       },200);
+   };
+
+   let timer = null;
+   // 窗口的大小发生改变 （onresize）
+   // 为节约性能，通过setTimeout定时器进行 节流 操作
+   window.onresize = function () {
+       clearTimeout(timer);
+       timer = setTimeout(function () {
            waterFull('main','box');
-       }
-   }
+       },200);
+   };
 };
 
 function createItems(num) {
@@ -62,6 +76,7 @@ function waterFull(parent, child) {
         boxHeight = allBox[i].offsetHeight;
         if (i < cols) {// 第一行
             heightArr.push(boxHeight);
+            allBox[i].style = '';
         }
         else{// 剩余行, 逐个定位
             // 取出最矮的盒子的高度

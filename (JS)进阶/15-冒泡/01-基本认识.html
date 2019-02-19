@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本认识</title>
+    <style>
+        #father{
+            width: 600px;
+            height: 600px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="father">
+        <button id="btn">点我</button>
+    </div>
+    <script>
+        let father = document.getElementById('father');
+        let btn = document.getElementById('btn');
+
+        btn.onclick = function (event) {
+            // 阻止冒泡
+            if (event && event.stopPropagation) { // w3c标准
+                event.stopPropagation()
+            }else{ // IE系列 IE 678
+                event.cancelBubble = true;
+            }
+            console.log('点击了按钮');
+        };
+
+        father.onclick = function () {
+            console.log('点击了father');
+        };
+
+        document.onclick = function () {
+            console.log('点击了document');
+        }
+    </script>
+</body>
+</html>

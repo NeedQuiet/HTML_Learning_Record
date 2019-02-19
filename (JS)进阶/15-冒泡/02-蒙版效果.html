@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蒙版效果</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html,body{
+            width: 100%;
+            height: 3000px;
+        }
+
+        #panel{
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.4;
+            /*针对IE8透明度兼容问题*/
+            filter: alpha(opacity:40);
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+
+        #login{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border-radius: 5px;
+            position: fixed;
+            left: 50%;
+            top:50%;
+            margin-left: -100px;
+            margin-top: -100px;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="btn">点我打开蒙版</button>
+    <div id="panel"></div>
+    <div id="login"></div>
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+            $('btn').onclick = function (event) {
+                // 阻止冒泡(为防止下方document拦截)
+                if (event && event.stopPropagation){
+                    event.stopPropagation()
+                } else{
+                    window.event.cancelBubble = true;
+                }
+
+                // 显示蒙版
+                $('panel').style.display = 'block';
+                $('login').style.display = 'block';
+
+                // 隐藏滚动条
+                document.body.style.overflow = 'hidden';
+            };
+
+            // 点击document
+            document.onclick = function (event) {
+                let e = event || window.event;
+                // 获取点击的标签
+                let targetId = e.target ? e.target.id : e.srcElement.id;// 兼容写法
+                console.log(targetId);
+                if (targetId !== 'login') {
+                    // 隐藏蒙版
+                    $('panel').style.display = 'none';
+                    $('login').style.display = 'none';
+
+                    // 显示滚动条
+                    document.body.style.overflow = 'auto';
+                }else{
+                    console.log('点击了login');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>client家族</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #box{
+            width: 200px;
+            height: 200px;
+            border: 20px solid #cccccc;
+            padding: 35px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--div中有20个p标签-->
+    <div id="box">
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     <p>test</p>
+                     </div>
+
+    // client、offset、scroll家族的区别
+    <script>
+        let box = document.getElementById('box');
+        // 2*border + 2*padding + 内容宽高
+        console.log(box.offsetWidth, box.offsetHeight);// 310 310
+
+        // 2*padding + 内容宽高
+        console.log(box.clientWidth, box.clientHeight);// 270 270
+
+        // 2*padding +  能够滚动的内容宽高
+        console.log(box.scrollWidth, box.scrollHeight);// 270 475
+
+        // offsetLeft :当前元素距离有定位的父盒子的左边的距离
+        // offsetTop :当前元素距离有定位的父盒子的上边的距离
+        console.log(box.offsetLeft, box.offsetTop);// 0 0
+
+        // clientLeft: 左边边框的长度； clientTop：上边边框的长度
+        console.log(box.clientLeft, box.clientTop);// 20 20
+
+        // scrollLeft: 左边滚动的长度； scrollTop：上边滚动的长度
+        console.log(box.scrollLeft, box.scrollTop);// 0 0
+    </script>
+</body>
+</html>

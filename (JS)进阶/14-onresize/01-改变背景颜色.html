@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="js/myFunc.js"></script>
+<script>
+    window.onload = function () {
+
+        let bgColor = '';
+
+        changeColor();
+
+        window.onresize = changeColor;
+
+        function changeColor() {
+            if (client().width >= 960) {
+                bgColor = 'red';
+            }else if (client().width >= 600) {
+                bgColor = 'blue';
+            }else{
+                bgColor = 'green';
+            }
+            document.body.style.backgroundColor = bgColor;
+        }
+    }
+</script>
+</body>
+</html>
