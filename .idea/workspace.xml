@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941d7b77-8d51-4766-a68d-67f78977ba61" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/04-天猫弹性导航/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/04-天猫弹性导航/images/tmao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/04-天猫弹性导航/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/05-事件对象event/01-事件对象.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/05-事件对象event/02-常见属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/05-事件对象event/03-动态获取鼠标的位置.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/06-放大镜特效/images/top-ad-list-001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/06-放大镜特效/images/top-ad-list-002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/06-放大镜特效/images/top-ad-list-003.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/06-放大镜特效/images/top-ad-list-004.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/06-放大镜特效/images/top-ad-list-005.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/06-放大镜特效/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/07-进度条/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/08-商品展示(横向进度条)特效/images/top-ad-list-001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/08-商品展示(横向进度条)特效/images/top-ad-list-002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/08-商品展示(横向进度条)特效/images/top-ad-list-003.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/08-商品展示(横向进度条)特效/images/top-ad-list-004.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/08-商品展示(横向进度条)特效/images/top-ad-list-005.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/08-商品展示(横向进度条)特效/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/09-scroll家族/常用属性、JSON封装方法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/10-瀑布流/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/10-瀑布流/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/myFunc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,29 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/07-进度条/index.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="77" column="47" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/08-商品展示(横向进度条)特效/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="常用属性、JSON封装方法.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/09-scroll家族/常用属性、JSON封装方法.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="270">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -68,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -121,10 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/基础知识点/17-Flex伸缩布局(轴方向及对齐方式).html" />
-        <option value="$PROJECT_DIR$/基础知识点/18-Flex伸缩布局(子项目换行).html" />
-        <option value="$PROJECT_DIR$/基础知识点/18-Flex伸缩布局(换行及多行对齐).html" />
-        <option value="$PROJECT_DIR$/基础知识点/19-Flex伸缩布局(响应式).html" />
         <option value="$PROJECT_DIR$/基础知识点/20-FlexDemo(手机百度测试).html" />
         <option value="$PROJECT_DIR$/基础知识点/21-圣杯布局.html" />
         <option value="$PROJECT_DIR$/基础知识点/22-双飞翼布局.html" />
@@ -172,6 +134,10 @@
         <option value="$PROJECT_DIR$/(JS)进阶/08-商品展示(横向进度条)特效/index.html" />
         <option value="$PROJECT_DIR$/(JS)进阶/07-进度条/index.html" />
         <option value="$PROJECT_DIR$/(JS)进阶/09-scroll家族/01-常用属性.html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/10-瀑布流/css/index.css" />
+        <option value="$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/myFunc.js" />
+        <option value="$PROJECT_DIR$/(JS)进阶/10-瀑布流/index.html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/index.js" />
       </list>
     </option>
   </component>
@@ -185,9 +151,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="932" />
+    <option name="x" value="365" />
     <option name="y" value="23" />
-    <option name="width" value="960" />
+    <option name="width" value="1455" />
     <option name="height" value="1014" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -198,13 +164,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
               <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="(JS)Demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="(JS)Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="02-Tab选项卡" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="(JS)Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="02-Tab选项卡" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
@@ -217,10 +200,31 @@
               <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
               <item name="09-scroll家族" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
+              <item name="10-瀑布流" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
+              <item name="10-瀑布流" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
+              <item name="10-瀑布流" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,18 +298,19 @@
       <workItem from="1550020869182" duration="21431000" />
       <workItem from="1550195438950" duration="9130000" />
       <workItem from="1550229812346" duration="2196000" />
-      <workItem from="1550453051523" duration="18423000" />
+      <workItem from="1550453051523" duration="21297000" />
+      <workItem from="1550540458625" duration="3978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277511000" />
+    <option name="totallyTimeSpent" value="284363000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="932" y="23" width="960" height="1014" extended-state="0" />
+    <frame x="365" y="23" width="1455" height="1014" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27582535" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.195189" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32978722" />
@@ -336,31 +341,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/(HTML+CSS)基础知识点/18-Flex伸缩布局(换行及多行对齐).html">
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+        <state relative-caret-position="225">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/(HTML+CSS)基础知识点/19-Flex伸缩布局(响应式).html">
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(HTML+CSS)基础知识点/07-盒子模型.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(HTML+CSS)基础知识点/17-Flex伸缩布局(轴方向及对齐方式).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -569,11 +563,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/02-JS常用函数库/js/underscore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2616">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-2616" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/02-JS常用函数库/index.html">
@@ -615,9 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="38" column="82" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
-          <folding>
-            <marker date="1550232028574" expanded="true" signature="399:451" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -625,14 +612,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/06-放大镜特效/images/top-ad-list-001.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/05-事件对象event/02-常见属性.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -652,14 +633,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="127" column="49" selection-start-line="127" selection-start-column="49" selection-end-line="127" selection-end-column="49" />
-          <folding>
-            <marker date="1550474615465" expanded="true" signature="1572:1781" ph="..." />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(HTML+CSS)基础知识点/Image/iphone1.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/(HTML+CSS)基础知识点/29-C3实现无缝滚动.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -667,9 +642,6 @@
           <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(HTML+CSS)Demo/05-苏宁首页/images/AD01.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/07-进度条/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -685,10 +657,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)Demo/02-Tab选项卡/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="21" selection-start-line="21" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/09-scroll家族/常用属性、JSON封装方法.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="293">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/myFunc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="25" column="100" lean-forward="true" selection-start-line="25" selection-start-column="100" selection-end-line="25" selection-end-column="100" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>
