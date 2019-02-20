@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="btn">往右走</button>
+    <div id="box"></div>
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+            // 变量
+            let target = 800, timer = null;
+
+            $('btn').onclick = function () {
+               clearInterval(timer);
+
+               timer = setInterval(function () {
+                   // 求出步长
+                   let speed = (target - box.offsetLeft) * 0.2;
+
+                   // 向上取整
+                   speed = Math.ceil(speed);
+
+                   // 动起来
+                   box.style.left = box.offsetLeft + speed + 'px';
+                   box.innerText = box.offsetLeft;
+                   console.log(box.offsetLeft);
+
+                   // 边界
+                   if (box.offsetLeft === target) {
+                       clearInterval(timer);
+                   }
+               },20);
+            }
+        }
+    </script>
+</body>
+</html>

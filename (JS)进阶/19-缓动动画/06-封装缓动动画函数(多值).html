@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>封装缓动动画</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">btn1</button>
+    <button id="btn1">btn2</button>
+    <div id="box"></div>
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+            // 变量
+            let target = 80, timer = null;
+
+            $('btn').onclick = function () {
+                buffer($('box'),{'left':80,'top':40,'width':300,'height':400});
+            };
+
+            $('btn1').onclick = function () {
+                buffer($('box'),{'height':500});
+            };
+
+
+            /**
+             * 缓动动画函数(多值)
+             * @param {object}obj
+             * @param json
+             */
+            function buffer(obj, json) {
+                clearInterval(obj.timer);
+
+                let begin = 0, target = 0, speed = 0;
+                obj.timer = setInterval(function () {
+                    // 用标志位来控制是否停止timer
+                    let flag = true;
+                    for (let key in json) {
+                        //获取初始值
+                        begin = parseInt(getCSSAttrValue(obj,key)) || 0;
+                        target = json[key];
+
+                        // 求出步长
+                        speed = (target - begin) * 0.2;
+                        // 是否向上取整
+                        speed = (target > begin ) ? Math.ceil(speed) : Math.floor(speed);
+                        // 动起来
+                        obj.style[key] = begin + speed + 'px';
+                        // 判断边界
+                        if (begin !== target) {
+                            flag = false;
+                        }
+
+                        if (flag) {
+                            clearInterval(timer);
+                        }
+                    }
+                },20);
+            }
+        }
+    </script>
+</body>
+</html>

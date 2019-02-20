@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941d7b77-8d51-4766-a68d-67f78977ba61" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/17-综合动画/01-基本动画原理、封装.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/17-综合动画/js/myFunc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/18-无限轮播/images/AD01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/18-无限轮播/images/AD02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/18-无限轮播/images/AD03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/18-无限轮播/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/18-无限轮播/js/myFunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/01-基本的缓动动画.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/02-封装缓动动画函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/03-动态设置CssStyle、获取Css属性值.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/04-封装缓动动画函数(单值).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/05-数组及JSON的遍历.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/js/myFunc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,20 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/18-无限轮播/index.html">
+      <file leaf-file-name="06-封装缓动动画函数(多值).html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值).html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
-              <caret line="108" column="27" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myFunc.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/18-无限轮播/js/myFunc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+            <state relative-caret-position="478">
+              <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -54,7 +45,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&amp;</find>
       <find>btn</find>
       <find>bg-image</find>
       <find>ul</find>
@@ -84,6 +74,7 @@
       <find>box</find>
       <find>ele</find>
       <find>ol_indedx</find>
+      <find>speed</find>
     </findStrings>
     <replaceStrings>
       <replace>relative</replace>
@@ -101,14 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JS基础/01-JavaScript中的常量和变量.html" />
-        <option value="$PROJECT_DIR$/JS基础/01-JS常量、变量.html" />
-        <option value="$PROJECT_DIR$/JS基础/01-JS常量、变量、数据类型.html" />
-        <option value="$PROJECT_DIR$/JS基础/02-数组.html" />
-        <option value="$PROJECT_DIR$/JS基础/03-函数.html" />
-        <option value="$PROJECT_DIR$/(JS)基础知识点/03-函数.html" />
-        <option value="$PROJECT_DIR$/(JS)基础知识点/12-数组高级API2.html" />
-        <option value="$PROJECT_DIR$/(JS)基础知识点/14-URL编码和解码.html" />
         <option value="$PROJECT_DIR$/(JS)基础知识点/10-(数字、字符串)取整.html" />
         <option value="$PROJECT_DIR$/(JS)基础知识点/13-字符串.html" />
         <option value="$PROJECT_DIR$/(JS)Demo/01-简单的小Demo/03-上传图片的格式验证.html" />
@@ -152,6 +135,14 @@
         <option value="$PROJECT_DIR$/(JS)进阶/17-综合动画/js/myFunc.js" />
         <option value="$PROJECT_DIR$/(JS)进阶/18-无限轮播/index.html" />
         <option value="$PROJECT_DIR$/(JS)进阶/18-无限轮播/js/myFunc.js" />
+        <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/01-基本的缓动动画.html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/03-动态设置元素的属性.html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/02-封装缓动动画函数.html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/03-动态设置CssStyle、获取Css属性值.html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/04-封装缓动动画函数(单值).html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/js/myFunc.js" />
+        <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/05-JSON的差异化.html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值).html" />
       </list>
     </option>
   </component>
@@ -165,9 +156,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="938" />
-    <option name="y" value="33" />
-    <option name="width" value="917" />
+    <option name="x" value="955" />
+    <option name="y" value="23" />
+    <option name="width" value="1089" />
     <option name="height" value="989" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -189,31 +180,13 @@
             <path>
               <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
               <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
-              <item name="(HTML+CSS)Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
-              <item name="(HTML+CSS)Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="05-苏宁首页" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
               <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
               <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
               <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
-              <item name="18-无限轮播" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
-              <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
-              <item name="18-无限轮播" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="19-缓动动画" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -231,11 +204,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/(JS)进阶/19-缓动动画" />
       <recent name="$PROJECT_DIR$/(JS)进阶/17-综合动画/js" />
       <recent name="$PROJECT_DIR$/(JS)进阶/18-无限轮播" />
       <recent name="$PROJECT_DIR$/(JS)进阶/18-无限轮播/images" />
       <recent name="$PROJECT_DIR$/(JS)进阶/17-综合动画" />
-      <recent name="$PROJECT_DIR$/(JS)进阶/16-获取选中的内容" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/(JS)进阶/16-获取选中的内容/iamges" />
@@ -295,18 +268,18 @@
       <workItem from="1550453051523" duration="21297000" />
       <workItem from="1550540458625" duration="18390000" />
       <workItem from="1550576193217" duration="173000" />
-      <workItem from="1550627608965" duration="7565000" />
+      <workItem from="1550627608965" duration="12868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306513000" />
+    <option name="totallyTimeSpent" value="311816000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="938" y="33" width="917" height="989" extended-state="0" />
+    <frame x="955" y="23" width="1089" height="989" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24863686" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20293848" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32978722" />
@@ -337,55 +310,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/(JS)基础知识点/01-JS常量、变量、数据类型.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)基础知识点/02-数组.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)基础知识点/03-函数.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="242" lean-forward="true" selection-start-line="242" selection-end-line="242" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)基础知识点/12-数组高级API2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)基础知识点/10-(数字、字符串)取整.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)基础知识点/14-URL编码和解码.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)Demo/01-简单的小Demo/03-上传图片的格式验证.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/(JS)基础知识点/13-字符串.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -679,8 +603,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/18-无限轮播/js/myFunc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+        <state relative-caret-position="418">
+          <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/01-基本的缓动动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/03-动态设置CssStyle、获取Css属性值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/02-封装缓动动画函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/js/myFunc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/04-封装缓动动画函数(单值).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/05-数组及JSON的遍历.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
         </state>
       </provider>
     </entry>

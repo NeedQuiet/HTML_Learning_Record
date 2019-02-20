@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态设置元素的属性</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #box{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border: 1px solid #000;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="but1">改变颜色</button>
+    <button id="but2">改变长度</button>
+    <div id="box"></div>
+    <button id="btn3">获取属性值</button>
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+            // 动态设置元素的属性
+            let btn1 = $('but1');
+            let btn2 = $('but2');
+            let box = $('box');
+
+            btn1.onclick = function () {
+                chageCssStyle(box,'backgroundColor','green');
+            };
+            
+            btn2.onclick = function () {
+                chageCssStyle(box,'width','413px');
+            };
+
+            /**
+             * 改变Css样式
+             * @param {object}obj
+             * @param {string}attr
+             * @param {string}value
+             */
+            function chageCssStyle(obj, attr, value) {
+                obj.style[attr] = value;
+            }
+
+            // 获取css属性值
+            let btn3 = $('btn3');
+            btn3.onclick = function () {
+                console.log(getCSSAttrValue(box, 'width'));
+            };
+
+            /**
+             * 获取css属性值
+             * @param obj
+             * @param attr
+             * @returns {string}
+             */
+            function getCSSAttrValue(obj, attr) {
+                if (obj.currentStyle) {// IE 和 opera
+                    return obj.currentStyle[attr];
+                }else{
+                    return window.getComputedStyle(obj, null)[attr];
+                }
+            }
+        }
+    </script>
+</body>
+</html>

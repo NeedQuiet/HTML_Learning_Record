@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>封装缓动动画</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">btn1</button>
+    <button id="btn1">btn2</button>
+    <div id="box"></div>
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+            // 变量
+            let target = 800, timer = null;
+
+            $('btn').onclick = function () {
+                buffer($('box'),'left',target);
+            };
+
+            $('btn1').onclick = function () {
+                buffer($('box'),'height',300);
+            };
+
+            /**
+             * 缓动动画函数
+             * @param {object}obj
+             * @param {string}attr
+             * @param {number}target
+             */
+            function buffer(obj, attr, target) {
+                clearInterval(obj.timer);
+
+                obj.timer = setInterval(function () {
+                    //获取初始值
+                    let begin = parseInt(getCSSAttrValue(obj,attr));
+
+                    // 求出步长
+                    let speed = (target - begin) * 0.2;
+                    // 是否向上取整
+                    speed = (target > begin ) ? Math.ceil(speed) : Math.floor(speed);
+                    // 动起来
+                    obj.style[attr] = begin + speed + 'px';
+                    // 判断边界
+                    if (begin === target) {
+                        clearInterval(obj.timer);
+                    }
+                },20);
+            }
+        }
+    </script>
+</body>
+</html>
