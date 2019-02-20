@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本动画原理、封装</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #box{
+            width: 150px;
+            height: 150px;
+            background-color: yellowgreen;
+            position: absolute;
+            left: 0;
+            top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="btn">往右走</button>
+    <button id="btn1">归位</button>
+    <div id="box"></div>
+    <script src="js/myFunc.js"></script>
+    <script>
+        // 动画的基本原理是：盒子的offsetLeft + 步长
+        window.onload = function () {
+            $('btn').onmousedown = function () {
+                constant($('box'), 400, 20);
+            };
+            $('btn1').onmousedown = function () {
+                constant($('box'), 0, 20);
+            }
+        };
+    </script>
+</body>
+</html>
