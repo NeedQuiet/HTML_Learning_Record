@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>楼层特效</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html, body ,#ul, #ul li{
+            width: 100%;
+            height: 100%;
+        }
+
+        #ul li{
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            background-color: skyblue;
+        }
+
+        #ol{
+            width: 80px;
+            background-color: #ccc;
+            position: fixed;
+            left: 50px;
+            top: 35%;
+            border: 1px solid #fff;
+        }
+
+        #ol li{
+            line-height: 30px;
+            text-align: center;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #ol li.current{
+            background-color: orangered;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--GPS-->
+    <ol id="ol">
+        <li class="current">第1层</li>
+        <li>第2层</li>
+        <li>第3层</li>
+        <li>第4层</li>
+        <li>第5层</li>
+    </ol>
+    <!--楼层-->
+    <ul id="ul">
+        <li>第1层内容</li>
+        <li>第2层内容</li>
+        <li>第3层内容</li>
+        <li>第4层内容</li>
+        <li>第5层内容</li>
+    </ul>
+
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+            // 获取需要的标签
+            let ol = $('ol'), ul = $('ul');
+            let ols = ol.children;
+            let uls = ul.children;
+            let isClick = false;
+
+            // 上色
+            let colorArr = ['red','green','blue','purple','yellow'];
+            for (let i = 0; i < colorArr.length; i++) {
+                uls[i].style.backgroundColor = colorArr[i];
+            }
+
+            // 监听GPS点击
+            for (let i = 0; i < ols.length; i++) {
+                (function (index) {
+                    let  olLi = ols[index];
+                    // 点击切换
+                    olLi.onmousedown = function () {
+                        isClick = true;
+                        for (let j = 0; j < ols.length; j++) {
+                            ols[j].className = '';
+                        }
+                        this.className = 'current';
+
+                        // 让内容滚动
+                        // document.documentElement.scrollTop = index * client().height};
+                        buffer(document.documentElement,{'scrollTop':index * client().height},function () {
+                            isClick = false;
+                        });
+                    };
+
+                })(i);
+            }
+
+            // 监听滚动
+            window.onscroll = function () {
+                if (!isClick) {
+                    // 获取滚动的高度
+                    let roll = Math.ceil(scroll().top);
+                    // 遍历
+                    for (let i = 0; i < uls.length; i++) {
+                        if (roll >= uls[i].offsetTop) {
+                            for (let j = 0; j < ols.length; j++) {
+                                ols[j].className = '';
+                            }
+                            ols[i].className = 'current';
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

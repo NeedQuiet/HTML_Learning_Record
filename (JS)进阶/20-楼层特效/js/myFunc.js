@@ -111,7 +111,7 @@ function chageCssStyle(obj, attr, value) {
 /**
  * 获取css属性值
  * @param {object}obj
- * @param {number}attr
+ * @param {string}attr
  * @returns {string}
  */
 function getCSSAttrValue(obj, attr) {
@@ -140,6 +140,9 @@ function buffer(obj, json, func) {
             if ('opacity' === key) { // 透明度
                 begin = parseFloat(getCSSAttrValue(obj,key)) * 100 || 100;
                 target = parseInt(json[key] * 100);
+            }else if ('scrollTop' === key){
+                begin = Math.ceil(obj.scrollTop);
+                target = parseInt(json[key]);
             }else{ // 其他情况
                 begin = parseInt(getCSSAttrValue(obj,key)) || 0;
                 target = parseInt(json[key]);
@@ -156,9 +159,12 @@ function buffer(obj, json, func) {
                 // ie浏览器
                 obj.style.filter = `alpha(opacity:${begin + speed})`;
 
+            }else if ('scrollTop' === key){
+                obj.scrollTop = begin + speed ;
             }else{
                 obj.style[key] = begin + speed + 'px';
             }
+
             // 判断边界
             if (begin !== target) {
                 flag = false;

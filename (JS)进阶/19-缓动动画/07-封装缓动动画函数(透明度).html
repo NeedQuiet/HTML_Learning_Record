@@ -37,7 +37,7 @@
 
 
             /**
-             * 缓动动画函数(多值/回调函数)
+             * 缓动动画函数
              * @param {object}obj
              * @param {string}json
              * @param {function}func
@@ -80,7 +80,7 @@
                         }
 
                         if (flag) {
-                            clearInterval(timer);
+                            clearInterval(obj.timer);
 
                             // 判断有没有回调函数
                             if (func) {
