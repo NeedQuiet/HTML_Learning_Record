@@ -28,20 +28,21 @@
             let target = 80, timer = null;
 
             $('btn').onclick = function () {
-                buffer($('box'),{'left':80,'top':40,'width':300,'height':400});
+                buffer($('box'),{'opacity':0.2,'left':80,'top':40,'width':100,'height':200});
             };
 
             $('btn1').onclick = function () {
-                buffer($('box'),{'height':500});
+                buffer($('box'),{'left':80,'top':40,'width':100,'height':200});
             };
 
 
             /**
-             * 缓动动画函数(多值)
+             * 缓动动画函数(多值/回调函数)
              * @param {object}obj
-             * @param json
+             * @param {string}json
+             * @param {function}func
              */
-            function buffer(obj, json) {
+            function buffer(obj, json, func) {
                 clearInterval(obj.timer);
 
                 let begin = 0, target = 0, speed = 0;
@@ -50,15 +51,29 @@
                     let flag = true;
                     for (let key in json) {
                         //获取初始值
-                        begin = parseInt(getCSSAttrValue(obj,key)) || 0;
-                        target = json[key];
+                        if ('opacity' === key) { // 透明度
+                            begin = parseFloat(getCSSAttrValue(obj,key)) * 100 || 100;
+                            target = parseInt(json[key] * 100);
+                        }else{ // 其他情况
+                            begin = parseInt(getCSSAttrValue(obj,key)) || 0;
+                            target = parseInt(json[key]);
+                        }
+
 
                         // 求出步长
                         speed = (target - begin) * 0.2;
                         // 是否向上取整
                         speed = (target > begin ) ? Math.ceil(speed) : Math.floor(speed);
                         // 动起来
-                        obj.style[key] = begin + speed + 'px';
+                        if ('opacity' === key){
+                            // w3c浏览器
+                            obj.style.opacity = (begin + speed) / 100;
+                            // ie浏览器
+                            obj.style.filter = `alpha(opacity:${begin + speed})`;
+
+                        }else{
+                            obj.style[key] = begin + speed + 'px';
+                        }
                         // 判断边界
                         if (begin !== target) {
                             flag = false;
@@ -66,6 +81,12 @@
 
                         if (flag) {
                             clearInterval(timer);
+
+                            // 判断有没有回调函数
+                            if (func) {
+                                func();
+                            }
+
                         }
                     }
                 },20);

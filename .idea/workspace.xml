@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941d7b77-8d51-4766-a68d-67f78977ba61" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/01-基本的缓动动画.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/02-封装缓动动画函数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/03-动态设置CssStyle、获取Css属性值.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/04-封装缓动动画函数(单值).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/05-数组及JSON的遍历.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/js/myFunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/07-封装缓动动画函数(透明度).html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值).html" beforeDir="false" afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值、回调).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="06-封装缓动动画函数(多值).html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值).html">
+      <file leaf-file-name="07-封装缓动动画函数(透明度).html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/07-封装缓动动画函数(透明度).html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+            <state relative-caret-position="492">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
@@ -92,8 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/(JS)基础知识点/10-(数字、字符串)取整.html" />
-        <option value="$PROJECT_DIR$/(JS)基础知识点/13-字符串.html" />
         <option value="$PROJECT_DIR$/(JS)Demo/01-简单的小Demo/03-上传图片的格式验证.html" />
         <option value="$PROJECT_DIR$/(JS)Demo/01-简单的小Demo/05-九宫格布局.html" />
         <option value="$PROJECT_DIR$/(JS)基础知识点/15-Date.html" />
@@ -143,6 +136,8 @@
         <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/js/myFunc.js" />
         <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/05-JSON的差异化.html" />
         <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值).html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值、回调).html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/07-封装缓动动画函数(透明度).html" />
       </list>
     </option>
   </component>
@@ -156,7 +151,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="955" />
+    <option name="x" value="917" />
     <option name="y" value="23" />
     <option name="width" value="1089" />
     <option name="height" value="989" />
@@ -268,15 +263,15 @@
       <workItem from="1550453051523" duration="21297000" />
       <workItem from="1550540458625" duration="18390000" />
       <workItem from="1550576193217" duration="173000" />
-      <workItem from="1550627608965" duration="12868000" />
+      <workItem from="1550627608965" duration="14908000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311816000" />
+    <option name="totallyTimeSpent" value="313856000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="955" y="23" width="1089" height="989" extended-state="0" />
+    <frame x="917" y="23" width="1089" height="989" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20293848" />
@@ -310,13 +305,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/(JS)基础知识点/13-字符串.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/(JS)Demo/03-时钟/时钟.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -650,10 +638,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值).html">
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值、回调).html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/07-封装缓动动画函数(透明度).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
