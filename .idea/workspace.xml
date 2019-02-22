@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941d7b77-8d51-4766-a68d-67f78977ba61" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/20-楼层特效/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/(JS)进阶/20-楼层特效/js/myFunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/21-网易轮播图/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/21-网易轮播图/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/21-网易轮播图/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/21-网易轮播图/js/myFunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/22-旋转木马/images/AD01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/22-旋转木马/images/AD02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/22-旋转木马/images/AD03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/22-旋转木马/images/left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/22-旋转木马/images/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/22-旋转木马/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/(JS)进阶/22-旋转木马/js/myFunc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/07-封装缓动动画函数(透明度).html" beforeDir="false" afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/07-封装缓动动画函数(透明度).html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/js/myFunc.js" beforeDir="false" afterPath="$PROJECT_DIR$/(JS)进阶/19-缓动动画/js/myFunc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,60 +27,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="07-封装缓动动画函数(透明度).html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/07-封装缓动动画函数(透明度).html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="myFunc.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/js/myFunc.js">
+        <entry file="file://$PROJECT_DIR$/(JS)进阶/22-旋转木马/js/myFunc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="167" column="34" selection-start-line="167" selection-start-column="34" selection-end-line="167" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myFunc.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/20-楼层特效/js/myFunc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="136" column="23" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
+            <state relative-caret-position="232">
+              <caret line="145" column="25" selection-start-line="145" selection-start-column="25" selection-end-line="145" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/20-楼层特效/index.html">
+        <entry file="file://$PROJECT_DIR$/(JS)进阶/22-旋转木马/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
-              <folding>
-                <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/16-获取选中的内容/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-523">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/(JS)进阶/18-无限轮播/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="108" column="27" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
+            <state relative-caret-position="679">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
             </state>
           </provider>
         </entry>
@@ -90,11 +59,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bg-image</find>
-      <find>ul</find>
-      <find>position</find>
-      <find>toutiaoMoving</find>
-      <find>sn-nav</find>
       <find>top-ad-list</find>
       <find>biqiang-content</find>
       <find>casualScrolling</find>
@@ -120,12 +84,18 @@
       <find>ol_indedx</find>
       <find>speed</find>
       <find>timer</find>
+      <find>width</find>
+      <find>idex_now</find>
+      <find>log</find>
+      <find>cover</find>
+      <find>flag</find>
     </findStrings>
     <replaceStrings>
       <replace>relative</replace>
       <replace>allLixi</replace>
       <replace>obj</replace>
       <replace>ol_index</replace>
+      <replace>index_now</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/Demo/02-Mac桌面/bootstrap</dir>
@@ -137,13 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/(JS)基础知识点/15-Date.html" />
-        <option value="$PROJECT_DIR$/(JS)Demo/03-时钟/时钟.html" />
-        <option value="$PROJECT_DIR$/(JS)基础知识点/16-定时器基本语法结构.html" />
-        <option value="$PROJECT_DIR$/(JS)基础知识点/17-定时器缓动动画.html" />
-        <option value="$PROJECT_DIR$/(JS)Demo/01-简单的小Demo/04-发表评论.html" />
-        <option value="$PROJECT_DIR$/(JS)基础知识点/18-定时器轮播效果.html" />
-        <option value="$PROJECT_DIR$/(JS)进阶/01-星星海特效/index.html" />
         <option value="$PROJECT_DIR$/(JS)进阶/02-JS常用函数库/index.html" />
         <option value="$PROJECT_DIR$/(HTML+CSS)Demo/05-苏宁首页/index.html" />
         <option value="$PROJECT_DIR$/(JS)进阶/03-照片墙特效/index.html" />
@@ -185,9 +148,16 @@
         <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值).html" />
         <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值、回调).html" />
         <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/js/myFunc.js" />
-        <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/07-封装缓动动画函数(透明度).html" />
         <option value="$PROJECT_DIR$/(JS)进阶/20-楼层特效/js/myFunc.js" />
         <option value="$PROJECT_DIR$/(JS)进阶/20-楼层特效/index.html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/21-网易轮播图/css.html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/21-网易轮播图/css/index.css" />
+        <option value="$PROJECT_DIR$/(JS)进阶/21-网易轮播图/index.html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/21-网易轮播图/js/index.js" />
+        <option value="$PROJECT_DIR$/(JS)进阶/19-缓动动画/07-封装缓动动画函数(透明度).html" />
+        <option value="$PROJECT_DIR$/(JS)进阶/21-网易轮播图/js/myFunc.js" />
+        <option value="$PROJECT_DIR$/(JS)进阶/22-旋转木马/js/myFunc.js" />
+        <option value="$PROJECT_DIR$/(JS)进阶/22-旋转木马/index.html" />
       </list>
     </option>
   </component>
@@ -201,10 +171,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="807" />
+    <option name="x" value="675" />
     <option name="y" value="23" />
-    <option name="width" value="1089" />
-    <option name="height" value="989" />
+    <option name="width" value="1104" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -227,6 +197,37 @@
               <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
               <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
+              <item name="10-瀑布流" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
+              <item name="19-缓动动画" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
+              <item name="21-网易轮播图" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
+              <item name="22-旋转木马" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HTML_Learning_Record" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_Learning_Record" type="462c0819:PsiDirectoryNode" />
+              <item name="(JS)进阶" type="462c0819:PsiDirectoryNode" />
+              <item name="22-旋转木马" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -235,26 +236,26 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="test1&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="cover&#9;ACTION&#9;SwitchCoverage&#10;test1&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/(JS)进阶/20-楼层特效" />
-      <recent name="$PROJECT_DIR$/(JS)进阶/19-缓动动画" />
-      <recent name="$PROJECT_DIR$/(JS)进阶/17-综合动画/js" />
-      <recent name="$PROJECT_DIR$/(JS)进阶/18-无限轮播" />
-      <recent name="$PROJECT_DIR$/(JS)进阶/18-无限轮播/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/(JS)进阶/22-旋转木马/images" />
       <recent name="$PROJECT_DIR$/(JS)进阶/16-获取选中的内容/iamges" />
       <recent name="$PROJECT_DIR$/(JS)进阶" />
       <recent name="$PROJECT_DIR$/(JS)进阶/04-天猫弹性导航/images" />
       <recent name="$PROJECT_DIR$/(JS)进阶/02-JS常用函数库/js" />
-      <recent name="$PROJECT_DIR$/(JS)进阶/01-星星海特效/images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/(JS)进阶/22-旋转木马" />
+      <recent name="$PROJECT_DIR$/(JS)进阶/21-网易轮播图" />
+      <recent name="$PROJECT_DIR$/(JS)进阶/20-楼层特效" />
+      <recent name="$PROJECT_DIR$/(JS)进阶/19-缓动动画" />
+      <recent name="$PROJECT_DIR$/(JS)进阶/17-综合动画/js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -308,16 +309,18 @@
       <workItem from="1550540458625" duration="18390000" />
       <workItem from="1550576193217" duration="173000" />
       <workItem from="1550627608965" duration="20648000" />
+      <workItem from="1550801456954" duration="19643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319596000" />
+    <option name="totallyTimeSpent" value="339239000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="807" y="23" width="1089" height="989" extended-state="0" />
+    <frame x="675" y="23" width="1104" height="980" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20293848" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27083334" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32978722" />
@@ -348,71 +351,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/(JS)Demo/01-简单的小Demo/05-九宫格布局.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)Demo/01-简单的小Demo/04-发表评论.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)基础知识点/18-定时器轮播效果.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/01-星星海特效/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/02-JS常用函数库/js/underscore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2616">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/02-JS常用函数库/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)基础知识点/17-定时器缓动动画.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(HTML+CSS)Demo/05-苏宁首页/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="315" column="17" selection-start-line="315" selection-start-column="14" selection-end-line="315" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/05-事件对象event/01-事件对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/04-天猫弹性导航/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -490,13 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/11-中部导航吸顶/js/myFunc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -536,13 +467,6 @@
     <entry file="file://$PROJECT_DIR$/(JS)进阶/14-onresize/js/myFunc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-151" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/12-侧边栏广告、返回顶部/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="96" column="27" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/14-onresize/01-改变背景颜色.html">
@@ -587,9 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/18-无限轮播/images/AD01.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/17-综合动画/01-基本动画原理、封装.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -611,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/01-基本的缓动动画.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/03-动态设置CssStyle、获取Css属性值.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
@@ -632,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/04-封装缓动动画函数(单值).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/05-数组及JSON的遍历.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -646,16 +553,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值、回调).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/16-获取选中的内容/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-523">
+        <state relative-caret-position="60">
           <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
         </state>
       </provider>
@@ -669,32 +569,125 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/js/myFunc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
+        <state relative-caret-position="2505">
           <caret line="167" column="34" selection-start-line="167" selection-start-column="34" selection-end-line="167" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/07-封装缓动动画函数(透明度).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/20-楼层特效/js/myFunc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
+        <state relative-caret-position="2040">
           <caret line="136" column="23" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/21-网易轮播图/css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/(JS)进阶/20-楼层特效/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+        <state relative-caret-position="181">
+          <caret line="77" column="55" lean-forward="true" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
           <folding>
             <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/21-网易轮播图/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/22-旋转木马/js/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/22-旋转木马/images/left.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/12-侧边栏广告、返回顶部/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/10-瀑布流/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/04-封装缓动动画函数(单值).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/01-基本的缓动动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/06-封装缓动动画函数(多值、回调).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="30" column="77" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/19-缓动动画/07-封装缓动动画函数(透明度).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/21-网易轮播图/js/myFunc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="829">
+          <caret line="180" column="9" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/21-网易轮播图/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="62" column="74" selection-start-line="62" selection-start-column="74" selection-end-line="62" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/21-网易轮播图/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/22-旋转木马/js/myFunc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="145" column="25" selection-start-line="145" selection-start-column="25" selection-end-line="145" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/(JS)进阶/22-旋转木马/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
         </state>
       </provider>
     </entry>

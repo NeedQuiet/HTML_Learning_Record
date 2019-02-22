@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转木马</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: none;
+            list-style:none;
+        }
+        
+        body{
+            background-color: #000;
+        }
+
+        #slider{
+            width: 1200px;
+            height: 300px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        #slider li{
+            position: absolute;
+            width: 600px;
+            height: 300px;
+            left: 300px;
+            top: 0;
+        }
+
+        #slider li img{
+            width: 600px;
+            height: 300px;
+        }
+
+        #slider_ctl_prev,
+        #slider_ctl_next{
+            width: 60px;
+            height: 60px;
+            display: block;
+            position: absolute;
+            top: 120px;
+        }
+
+        #slider_ctl_prev{
+            background: url("images/left.png") no-repeat;
+            background-size: cover ;
+            left: 0;
+
+        }
+
+        #slider_ctl_next{
+            background: url("images/right.png") no-repeat;
+            background-size: cover ;
+            right: 0;
+        }
+
+        #slider_ctl{
+            opacity: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="slider">
+        <ul id="slider_main">
+            <li><img src="images/AD01.jpg" alt=""></li>
+            <li><img src="images/AD02.jpg" alt=""></li>
+            <li><img src="images/AD03.jpg" alt=""></li>
+            <li><img src="images/AD01.jpg" alt=""></li>
+            <li><img src="images/AD02.jpg" alt=""></li>
+        </ul>
+        <div id="slider_ctl">
+            <span id="slider_ctl_prev"></span>
+            <span id="slider_ctl_next"></span>
+        </div>
+    </div>
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+            // 获取标签
+            let slider = $('slider');
+            let slider_main = $('slider_main');
+            let allLis = slider_main.children;
+            let slider_ctl = $('slider_ctl');
+
+            // 设置指示器的显示和隐藏
+            slider.onmouseover = function () {
+                buffer(slider_ctl,{'opacity':1});
+            };
+
+            slider.onmouseout = function () {
+                buffer(slider_ctl,{'opacity':0});
+            };
+
+            let json = [
+                {width:300,top:40,left:150,opacity:0.3,zIndex:2},
+                {width:600,top:80,left:0,opacity:0.5,zIndex:3},
+                {width:800,top:120,left:300,opacity:1,zIndex:4},
+                {width:600,top:80,left:600,opacity:0.5,zIndex:3},
+                {width:300,top:40,left:450,opacity:0.3,zIndex:2}
+                ];
+
+            for (let i = 0; i < json.length; i++) {
+                buffer(allLis[i],json[i]);
+            }
+        }
+    </script>
+</body>
+</html>

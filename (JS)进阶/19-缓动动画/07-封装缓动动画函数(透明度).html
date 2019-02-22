@@ -10,7 +10,7 @@
         }
 
         #box{
-            width: 100px;
+            width: 1300px;
             height: 100px;
             background-color: red;
             position: absolute;
@@ -59,7 +59,6 @@
                             target = parseInt(json[key]);
                         }
 
-
                         // 求出步长
                         speed = (target - begin) * 0.2;
                         // 是否向上取整
@@ -78,16 +77,16 @@
                         if (begin !== target) {
                             flag = false;
                         }
+                    }
 
-                        if (flag) {
-                            clearInterval(obj.timer);
+                    if (flag) {
+                        clearInterval(obj.timer);
 
-                            // 判断有没有回调函数
-                            if (func) {
-                                func();
-                            }
-
+                        // 判断有没有回调函数
+                        if (func) {
+                            func();
                         }
+
                     }
                 },20);
             }
