@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>狗类</title>
+</head>
+<body>
+<script>
+    function Dog(option) {
+        this._init(option)
+    }
+
+    Dog.prototype = {
+        // 属性
+        _init : function (option) {
+            this.name = option.name;
+            this.age = option.age;
+            this.dogFrirnds = option.dogFrirnds;
+        },
+        
+        // 方法
+        eat : function (someThing) {
+            console.log(this.name + 'eat' + someThing);
+        }
+    };
+
+    // 实例化
+    let sdog = new Dog({name:'小花',age:'20'});
+
+    //Dog {name: "小花", age: "20", dogFrirnds: undefined} "undefined" "20" undefined
+    console.log(sdog,typeof obj,sdog.age,sdog.dogFrirnds);
+
+    sdog.eat('屎');// 小花eat屎
+</script>
+</body>
+</html>

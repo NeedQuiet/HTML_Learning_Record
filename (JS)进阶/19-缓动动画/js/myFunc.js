@@ -163,16 +163,15 @@ function buffer(obj, json, func) {
             if (begin !== target) {
                 flag = false;
             }
+        }
+        if (flag) {
+            clearInterval(obj.timer);
 
-            if (flag) {
-                clearInterval(obj.timer);
-
-                // 判断有没有回调函数
-                if (func) {
-                    func();
-                }
-
+            // 判断有没有回调函数
+            if (func) {
+                func();
             }
+
         }
     },20);
 }

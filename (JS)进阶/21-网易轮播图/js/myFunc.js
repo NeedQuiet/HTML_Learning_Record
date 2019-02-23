@@ -164,11 +164,12 @@ function buffer(obj, json, func) {
             }else{
                 obj.style[key] = begin + speed + 'px';
             }
+            // 判断边界
+            if (begin !== target) {
+                flag = false;
+            }
         }
-        // 判断边界
-        if (begin !== target) {
-            flag = false;
-        }
+
 
         if (flag) {
             clearInterval(obj.timer);

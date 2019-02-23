@@ -31,8 +31,8 @@
         }
 
         #slider li img{
-            width: 600px;
-            height: 300px;
+            width: 100%;
+            height: 100%;
         }
 
         #slider_ctl_prev,
@@ -41,7 +41,7 @@
             height: 60px;
             display: block;
             position: absolute;
-            top: 120px;
+            top: 220px;
         }
 
         #slider_ctl_prev{
@@ -95,16 +95,33 @@
                 buffer(slider_ctl,{'opacity':0});
             };
 
+            // 定位
             let json = [
-                {width:300,top:40,left:150,opacity:0.3,zIndex:2},
-                {width:600,top:80,left:0,opacity:0.5,zIndex:3},
-                {width:800,top:120,left:300,opacity:1,zIndex:4},
-                {width:600,top:80,left:600,opacity:0.5,zIndex:3},
-                {width:300,top:40,left:450,opacity:0.3,zIndex:2}
+                {width:360,height:180,top:40,left:200,opacity:0.3,zIndex:2},
+                {width:450,height:225,top:110,left:50,opacity:0.5,zIndex:3},
+                {width:600,height:300,top:150,left:300,opacity:1,zIndex:4},
+                {width:450,height:225,top:110,left:700,opacity:0.5,zIndex:3},
+                {width:360,height:180,top:40,left:640,opacity:0.3,zIndex:2}
                 ];
+            startAnimation();
 
-            for (let i = 0; i < json.length; i++) {
-                buffer(allLis[i],json[i]);
+            // 监听点击
+            for (let i = 0; i < slider_ctl.children.length; i++) {
+                let item = slider_ctl.children[i];
+                item.onmousedown = function () {
+                    if (this.id === 'slider_ctl_prev') { // 左边
+                        json.push(json.shift());
+                    }else{ // 右边
+                        json.unshift(json.pop());
+                    }
+                    startAnimation();
+                }
+            }
+
+            function startAnimation() {
+                for (let i = 0; i < json.length; i++) {
+                    buffer(allLis[i],json[i]);
+                }
             }
         }
     </script>

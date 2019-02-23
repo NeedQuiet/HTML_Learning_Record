@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>封闭作用域</title>
+</head>
+<body>
+<script>
+    function test(x) {
+        return function (y) {
+            console.log(x + y);
+        }
+    }
+
+    test(10)(19); // 29
+
+
+    (function () {
+        let age = 18;
+        console.log(age); // 18
+    })();
+
+    let name = 'a';
+    (function () {
+        console.log(name); // a
+        console.log(age); // Error: age is not defined
+    })();
+
+</script>
+</body>
+</html>

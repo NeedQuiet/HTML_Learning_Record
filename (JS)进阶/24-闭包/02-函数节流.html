@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数节流</title>
+</head>
+<body>
+<script>
+    // 每隔400ms做一次节流
+    // let timer = null;
+    // window.onresize = function () {
+    //     clearTimeout(timer);
+    //     timer = setTimeout(function () {
+    //         console.log(document.documentElement.clientWidth);
+    //     },400);
+    // };
+
+    // 封装
+    function throttle(fn, delay) {
+        let timer = null;
+        return function () {
+            clearTimeout(timer);
+            timer = setTimeout(fn, delay);
+        }
+    }
+
+    window.onresize = throttle(function () {
+        console.log('hahah');
+    },400);
+    
+</script>
+</body>
+</html>

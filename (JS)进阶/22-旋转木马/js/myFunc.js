@@ -159,15 +159,17 @@ function buffer(obj, json, func) {
                 // ie浏览器
                 obj.style.filter = `alpha(opacity:${begin + speed})`;
             }else if ('scrollTop' === key){
-                obj.scrollTop = begin + speed ;
+                obj.scrollTop = begin + speed;
+            }else if ('zIndex' === key){
+                obj.style[key] = json[key];
             }else{
                 obj.style[key] = begin + speed + 'px';
             }
-        }
 
-        // 判断边界
-        if (begin !== target) {
-            flag = false;
+            // 判断边界
+            if (begin !== target) {
+                flag = false;
+            }
         }
 
         if (flag) {
