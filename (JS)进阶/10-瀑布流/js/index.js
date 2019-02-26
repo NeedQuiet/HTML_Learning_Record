@@ -68,7 +68,7 @@ function waterFull(parent, child) {
     // 2.子盒子定位
 
     // 定义高度数组
-    let heightArr = [];// 次数组内容上限始终为列数，方便定位
+    let heightArr = [];// 此数组内容上限始终为列数，方便定位
     let boxHeight = 0, minBoxHeight = 0, minBoxIndex = 0;
     // 遍历子盒子
     for (let i = 0; i < allBox.length; i++) {

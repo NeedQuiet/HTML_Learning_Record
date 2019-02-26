@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>箭头函数</title>
+</head>
+<body>
+<script>
+    // function函数的this作用域
+    let obj = {
+        birth: 1990,
+        getAge: function () {
+            let b = this.birth; // 1990
+            let fn = function () {
+                console.log(this); // this指向window或undefined
+                console.log(b); // 1990
+                return new Date().getFullYear() - b;
+            };
+            fn();
+        }
+    };
+    console.log('getAge',obj.getAge());
+
+    // 箭头函数
+    let newObj = {
+        birth: 1990,
+        getAge: function () {
+            let b = this.birth; // 1990
+            let fn = () => new Date().getFullYear() - this.birth; // this指向obj对象
+            return fn();
+        }
+    };
+    console.log('newObj',newObj.getAge()); // 25
+
+
+
+    // 具有一个参数的简单函数
+    let single = a => a+a;
+    console.log(single(10));// 20
+
+    // 没有参数的需要用在箭头前加上小括号
+    let log = () => {console.log('no param')};
+    log(); // no param
+
+    // 多个参数需要用到小括号，参数间逗号间隔，例如两个数字相加
+    let add = (a,b) => a+b ;
+    console.log(add(10, 20));// 30
+
+    // 函数体多条语句需要用到大括号
+    let add1 = (a,b) => {
+        if (typeof a === 'number' && typeof b === 'number') {
+            return a + b
+        } else {
+            return 0
+        }
+    };
+    console.log(add1(10, 29)); // 39
+
+    // 返回对象时需要用小括号包起来，因为大括号被占用解释为代码块了
+    let b = () => ({json:20});
+    console.log(b().json);// 20
+
+    let getHash = () => {
+        // ...
+        return ({
+            name: 'Jack',
+            age: 33
+        })
+    };
+    console.log(getHash().name);// Jack
+    console.log(getHash());
+
+    // 直接作为事件handler
+    document.addEventListener('click', event => {
+        console.log(event)// MouseEvent {isTrusted: true, screenX: 1137, screenY: 285, clientX: 1068, clientY: 178, …}
+    });
+
+    // 使用箭头函数简化排序时传入的函数
+    let arr = [10, 20, 1, 2];
+    arr.sort((x,y)=>{
+        return y-x;//降序
+        // return x-y;//升序
+    });
+    console.log(arr);// [20, 10, 2, 1]
+
+
+
+</script>
+</body>
+</html>
